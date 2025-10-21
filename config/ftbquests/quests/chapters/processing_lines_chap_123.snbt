@@ -21,9 +21,11 @@
 			y: 11.5d
 		}
 		{
-			id: "1179D9001396FE89"
-			linked_quest: "0F1D766E2E2EEEB5"
-			x: 22.5d
+			id: "6A4A35ABD8D3F320"
+			linked_quest: "2DB216B224F2E8EF"
+			shape: "gear"
+			size: 1.5d
+			x: 20.0d
 			y: 19.5d
 		}
 	]
@@ -1179,7 +1181,10 @@
 			y: 23.5d
 		}
 		{
-			dependencies: ["76C3740D5841D569"]
+			dependencies: [
+				"76C3740D5841D569"
+				"1646D6D439B260D3"
+			]
 			id: "235423100BBE5C81"
 			rewards: [{
 				count: 3
@@ -1351,6 +1356,7 @@
 			dependencies: [
 				"0FBB34B21DA41C5D"
 				"73B438B7A98354EA"
+				"4D9DAED52FF74B8B"
 			]
 			id: "4BCC078B76C6CAE3"
 			rewards: [{
@@ -1384,6 +1390,7 @@
 		}
 		{
 			dependencies: ["0F1D766E2E2EEEB5"]
+			hide_dependency_lines: true
 			id: "58037316F922EBF0"
 			size: 1.0d
 			tasks: [{
@@ -1391,7 +1398,7 @@
 				item: "gtceu:tiny_debris_dust"
 				type: "item"
 			}]
-			x: 24.0d
+			x: 22.5d
 			y: 19.5d
 		}
 		{
@@ -1406,7 +1413,7 @@
 				item: "gtceu:debris_dust"
 				type: "item"
 			}]
-			x: 25.5d
+			x: 24.0d
 			y: 19.5d
 		}
 		{
@@ -1419,7 +1426,7 @@
 				item: "gtceu:small_purified_debris_dust"
 				type: "item"
 			}]
-			x: 27.0d
+			x: 25.5d
 			y: 19.5d
 		}
 		{
@@ -1433,7 +1440,7 @@
 				type: "item"
 			}]
 			title: "Debris Looping"
-			x: 24.5d
+			x: 23.0d
 			y: 18.0d
 		}
 		{
@@ -1445,7 +1452,7 @@
 				item: "gtceu:small_titanium_trifluoride_dust"
 				type: "item"
 			}]
-			x: 26.5d
+			x: 25.0d
 			y: 18.0d
 		}
 		{
@@ -1457,7 +1464,7 @@
 				item: "gtceu:titanium_trifluoride_dust"
 				type: "item"
 			}]
-			x: 28.0d
+			x: 26.5d
 			y: 18.0d
 		}
 		{
@@ -1470,7 +1477,7 @@
 				item: "gtceu:titanium_ingot"
 				type: "item"
 			}]
-			x: 31.5d
+			x: 30.0d
 			y: 18.0d
 		}
 		{
@@ -1491,7 +1498,7 @@
 					type: "item"
 				}
 			]
-			x: 29.5d
+			x: 28.0d
 			y: 18.0d
 		}
 		{
@@ -1512,7 +1519,7 @@
 					type: "item"
 				}
 			]
-			x: 26.5d
+			x: 25.0d
 			y: 21.0d
 		}
 		{
@@ -1532,7 +1539,7 @@
 					type: "item"
 				}
 			]
-			x: 24.5d
+			x: 23.0d
 			y: 21.0d
 		}
 		{
@@ -1550,7 +1557,7 @@
 				item: "gtceu:purified_debris_dust"
 				type: "item"
 			}]
-			x: 29.0d
+			x: 27.5d
 			y: 19.5d
 		}
 		{
@@ -1562,7 +1569,7 @@
 				item: "gtceu:debris_dust"
 				type: "item"
 			}]
-			x: 30.5d
+			x: 29.0d
 			y: 19.5d
 		}
 		{
@@ -1581,7 +1588,7 @@
 				item: "minecraft:netherite_ingot"
 				type: "item"
 			}]
-			x: 32.5d
+			x: 31.0d
 			y: 19.5d
 		}
 		{
@@ -1600,7 +1607,7 @@
 				item: "gtceu:pure_netherite_ingot"
 				type: "item"
 			}]
-			x: 33.5d
+			x: 32.0d
 			y: 21.0d
 		}
 		{
@@ -1621,7 +1628,7 @@
 					type: "item"
 				}
 			]
-			x: 31.5d
+			x: 30.0d
 			y: 21.0d
 		}
 		{
@@ -1636,7 +1643,7 @@
 				item: "gtceu:pure_netherite_dust"
 				type: "item"
 			}]
-			x: 30.0d
+			x: 28.5d
 			y: 21.0d
 		}
 		{
@@ -1657,7 +1664,7 @@
 					type: "item"
 				}
 			]
-			x: 28.5d
+			x: 27.0d
 			y: 21.0d
 		}
 		{
@@ -1678,7 +1685,7 @@
 					type: "item"
 				}
 			]
-			x: 27.5d
+			x: 26.0d
 			y: 22.5d
 		}
 		{
@@ -1698,8 +1705,8 @@
 					type: "item"
 				}
 			]
-			x: 15.0d
-			y: 24.0d
+			x: 9.5d
+			y: 21.5d
 		}
 		{
 			icon: "gtceu:wood_tar_bucket"
@@ -1718,8 +1725,8 @@
 					type: "item"
 				}
 			]
-			x: 14.0d
-			y: 22.5d
+			x: 9.5d
+			y: 23.5d
 		}
 		{
 			dependencies: ["1A1969BCD61B4F09"]
@@ -1739,8 +1746,8 @@
 					type: "item"
 				}
 			]
-			x: 16.0d
-			y: 22.5d
+			x: 11.0d
+			y: 23.5d
 		}
 		{
 			dependencies: ["767CC03EDC618C0B"]
@@ -1760,8 +1767,8 @@
 					type: "item"
 				}
 			]
-			x: 17.0d
-			y: 24.0d
+			x: 11.0d
+			y: 21.5d
 		}
 		{
 			dependencies: [
@@ -1784,16 +1791,11 @@
 					type: "item"
 				}
 			]
-			x: 18.0d
+			x: 12.0d
 			y: 22.5d
 		}
 		{
-			dependencies: [
-				"73A2A993EF325299"
-				"7DF87CEDE533948D"
-				"629C4DE28BB97660"
-				"2F55E0917FE80801"
-			]
+			dependencies: ["629C4DE28BB97660"]
 			dependency_requirement: "one_completed"
 			icon: "gtceu:epichlorohydrin_bucket"
 			id: "5779DD6EE8570223"
@@ -1811,36 +1813,8 @@
 					type: "item"
 				}
 			]
-			x: 18.0d
-			y: 19.5d
-		}
-		{
-			description: ["This recipe is quite easy to make."]
-			icon: "gtceu:propene_bucket"
-			id: "7DF87CEDE533948D"
-			optional: true
-			size: 1.0d
-			tasks: [
-				{
-					id: "04580F1A50CD22F6"
-					title: "Propene and Hypochlorous Acid"
-					type: "checkmark"
-				}
-				{
-					id: "13457D05B7F14983"
-					item: "gtceu:propene_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "3132FB637535B811"
-					item: "gtceu:hypochlorous_acid_bucket"
-					optional_task: true
-					type: "item"
-				}
-			]
 			x: 16.0d
-			y: 20.25d
+			y: 22.5d
 		}
 		{
 			description: ["This recipe is the easiest to make."]
@@ -1867,63 +1841,8 @@
 					type: "item"
 				}
 			]
-			x: 17.0d
-			y: 21.0d
-		}
-		{
-			description: ["This recipe has the least amount of byproducts."]
-			icon: "gtceu:glycerol_bucket"
-			id: "2F55E0917FE80801"
-			optional: true
-			size: 1.0d
-			tasks: [
-				{
-					id: "10373E891DA5F3A6"
-					title: "Glycerol and Hydrochloric Acid"
-					type: "checkmark"
-				}
-				{
-					id: "16C6661DD43BF9AA"
-					item: "gtceu:glycerol_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "701E14B8E02A28A5"
-					item: "gtceu:hydrochloric_acid_bucket"
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: 17.0d
-			y: 18.0d
-		}
-		{
-			icon: "gtceu:allyl_chloride_bucket"
-			id: "73A2A993EF325299"
-			optional: true
-			size: 1.0d
-			tasks: [
-				{
-					id: "79B0A1AADC878B14"
-					title: "Allyl Chloride and Hypochlorous Acid"
-					type: "checkmark"
-				}
-				{
-					id: "54A152EB5B1114FC"
-					item: "gtceu:allyl_chloride_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "5A6EDD972CC91ADD"
-					item: "gtceu:hypochlorous_acid_bucket"
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: 16.0d
-			y: 18.75d
+			x: 17.5d
+			y: 22.5d
 		}
 		{
 			dependencies: [
@@ -1944,8 +1863,8 @@
 				item: "gtceu:epoxy_bucket"
 				type: "item"
 			}]
-			x: 19.0d
-			y: 21.0d
+			x: 14.0d
+			y: 22.5d
 		}
 		{
 			dependencies: ["1AAB9C20E833029A"]
@@ -1965,8 +1884,8 @@
 					type: "item"
 				}
 			]
-			x: 29.5d
-			y: 23.0d
+			x: 18.5d
+			y: 23.5d
 		}
 		{
 			dependencies: ["06FBC454DC18AABA"]
@@ -1986,8 +1905,8 @@
 					type: "item"
 				}
 			]
-			x: 31.0d
-			y: 23.0d
+			x: 20.0d
+			y: 23.5d
 		}
 		{
 			dependencies: ["718F143E6E120E52"]
@@ -2007,8 +1926,8 @@
 					type: "item"
 				}
 			]
-			x: 32.5d
-			y: 23.0d
+			x: 21.5d
+			y: 23.5d
 		}
 		{
 			dependencies: [
@@ -2031,8 +1950,8 @@
 				item: "gtceu:polyvinyl_butyral_bucket"
 				type: "item"
 			}]
-			x: 33.5d
-			y: 24.0d
+			x: 23.5d
+			y: 23.5d
 		}
 		{
 			dependencies: ["3CB63B290C9EFAA2"]
@@ -2052,8 +1971,8 @@
 					type: "item"
 				}
 			]
-			x: 31.5d
-			y: 24.0d
+			x: 25.5d
+			y: 23.5d
 		}
 		{
 			dependencies: ["26D3E2C0599B43B2"]
@@ -2440,6 +2359,7 @@
 		}
 		{
 			dependencies: ["206859C2B2272102"]
+			hide_dependent_lines: true
 			id: "6A57B03345FC6D99"
 			rewards: [{
 				count: 2
@@ -2831,6 +2751,7 @@
 				"059CB064A515B157"
 			]
 			id: "24CF3F64E74A027E"
+			optional: true
 			tasks: [{
 				id: "61988A3A5F7B9253"
 				item: "kubejs:nether_tempered_shard"
@@ -2844,6 +2765,7 @@
 			description: ["Once you reach the Nether, you can create the most efficient Nether Star line using your &2UIV&r tier autoclave and the nether tempered elemental fluids, where, not only are you guaranteed to get infused shards, but have a chance to get extra!"]
 			icon: "minecraft:nether_star"
 			id: "2AA8CBE804E07BC7"
+			optional: true
 			tasks: [{
 				id: "38C47CEF4F0CDF23"
 				title: "Perfect Nether Star Looping"
@@ -2922,6 +2844,179 @@
 			}]
 			x: 6.5d
 			y: 12.5d
+		}
+		{
+			dependencies: [
+				"23A6938803281145"
+				"0B9C9B50CBD06F13"
+			]
+			description: [
+				"Can be done with some fancy mixing or Mystical Agriculture."
+				""
+				""
+				"{ \"text\": \"MA Air Production\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"38351B708EBA5528\" } }"
+			]
+			id: "2B695762FC4A7686"
+			optional: true
+			rewards: [{
+				id: "059875F4497E4EA9"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "7AF1BAB9B4390EB3"
+				item: "gtceu:ender_air_bucket"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 21.0d
+		}
+		{
+			dependencies: ["0F1D766E2E2EEEB5"]
+			description: [
+				"Can be done with some fancy mixing or Mystical Agriculture."
+				""
+				""
+				"{ \"text\": \"MA Air Production\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"38351B708EBA5528\" } }"
+			]
+			id: "23A6938803281145"
+			optional: true
+			rewards: [{
+				id: "11386D4E5873ED47"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "64B499458C1F62D4"
+				item: "gtceu:nether_air_bucket"
+				type: "item"
+			}]
+			x: 18.5d
+			y: 19.5d
+		}
+		{
+			dependencies: ["5E1E1A4F5036A6EA"]
+			description: ["The essence of the End, right in the palm of your hand."]
+			id: "0B9C9B50CBD06F13"
+			optional: true
+			rewards: [{
+				id: "43C38518BA14FB01"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "2448F8220FDCFE44"
+				item: "mysticalagriculture:end_agglomeratio"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 21.0d
+		}
+		{
+			dependencies: ["549B363564644706"]
+			description: ["The essence of the Nether, maybe it will bring some hot weather."]
+			id: "0F1D766E2E2EEEB5"
+			rewards: [{
+				id: "5EE84E5EE3586E86"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "0670EDADED37A8C8"
+				item: "mysticalagriculture:nether_agglomeratio"
+				type: "item"
+			}]
+			x: 17.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["0725DE9E90815AB4"]
+			description: ["Crushed Netherrack, not exactly groundbreaking."]
+			id: "549B363564644706"
+			rewards: [{
+				id: "7BE8C8DF5473190B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "3BD6AB9C714C8D5D"
+				item: "gtceu:netherrack_dust"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 19.5d
+		}
+		{
+			dependencies: ["4E9FAED9D889160A"]
+			description: ["Crushed Endstone, not exactly groundbreaking."]
+			id: "5E1E1A4F5036A6EA"
+			optional: true
+			rewards: [{
+				id: "7ECD96DDE51CD967"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "1F17577A8F6302A7"
+				item: "gtceu:endstone_dust"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 21.0d
+		}
+		{
+			dependencies: ["1820787D031EAB15"]
+			description: ["Make some Endstone and get to processing it."]
+			id: "4E9FAED9D889160A"
+			optional: true
+			rewards: [{
+				id: "2EA67AA0DED02E19"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "7190C3BB30387607"
+				item: "minecraft:end_stone"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 21.0d
+		}
+		{
+			dependencies: ["1820787D031EAB15"]
+			description: ["Make some Netherrack and get to processing it."]
+			id: "0725DE9E90815AB4"
+			rewards: [{
+				id: "5F7A11F57B0F3C94"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "14C28144E7157D9E"
+				item: "minecraft:netherrack"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["2B695762FC4A7686"]
+			id: "4E0DECCD49B24081"
+			tasks: [{
+				id: "33F54E4EBE2E7652"
+				item: "gtceu:liquid_ender_air_bucket"
+				type: "item"
+			}]
+			x: 19.0d
+			y: 21.0d
 		}
 	]
 	title: "Processing Lines (Chap 1,2,3)"

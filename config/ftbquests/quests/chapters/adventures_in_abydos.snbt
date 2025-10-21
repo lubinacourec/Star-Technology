@@ -513,7 +513,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: -5.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["305974D431F17AF0"]
@@ -533,7 +533,7 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: 1.5d
 			y: -5.0d
 		}
 		{
@@ -652,7 +652,7 @@
 				}
 			]
 			title: "Bacterial Colonies"
-			x: 1.5d
+			x: 3.5d
 			y: -5.0d
 		}
 		{
@@ -825,7 +825,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: -1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -855,7 +855,7 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: -1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -886,7 +886,7 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: -3.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -912,10 +912,13 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: 1.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["442233119AED645F"]
+			dependencies: [
+				"442233119AED645F"
+				"04DCB3F7F8B80717"
+			]
 			description: ["A Chevron that can hold data for more advanced destinations."]
 			id: "425A865B6B617DEC"
 			rewards: [{
@@ -932,11 +935,12 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: 3.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["379D69A44FC5B2F2"]
 			description: ["So this is what makes the Gates Beyond Comprehension...."]
+			hide_dependent_lines: true
 			id: "64F0BB858EEB7913"
 			rewards: [{
 				count: 2
@@ -955,7 +959,7 @@
 				}
 				type: "item"
 			}]
-			x: 11.5d
+			x: 7.5d
 			y: -5.0d
 		}
 		{
@@ -975,8 +979,8 @@
 				item: "kubejs:draconic_coordinate_core"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 1.0d
+			x: 6.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["2D064F759D13FE4B"]
@@ -1120,7 +1124,7 @@
 			]
 			title: "The Ancient Gate"
 			x: 11.5d
-			y: -1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["47DF7968E9B98C65"]
@@ -1133,7 +1137,7 @@
 				title: "Cheaper HydroCarbons"
 				type: "checkmark"
 			}]
-			x: -2.5d
+			x: -0.5d
 			y: -5.0d
 		}
 		{
@@ -1285,8 +1289,8 @@
 				}
 			]
 			title: "Runic Engraved Casings"
-			x: 5.5d
-			y: -5.0d
+			x: 7.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1318,7 +1322,7 @@
 			]
 			title: "Multi-Engraved Runic Plating"
 			x: 7.5d
-			y: -3.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -1345,7 +1349,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: -3.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -1378,8 +1382,8 @@
 				}
 			]
 			title: "Advanced Engraved Runes"
-			x: 6.5d
-			y: -4.0d
+			x: 9.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1404,7 +1408,7 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: 5.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
@@ -1490,7 +1494,7 @@
 				item: "kubejs:inscribe_casing"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 5.5d
 			y: -3.0d
 		}
 		{
@@ -1557,9 +1561,8 @@
 		}
 		{
 			dependencies: [
-				"2C354B0735DF8023"
-				"5FCA8ED151CEB5C1"
 				"2F26A144D29B00A5"
+				"3C3E585C933C9515"
 			]
 			description: ["Scans indicate that the Nether is an inhospitable dimension due to intensive radioactive decay. This armor will help mitigate the effects. The Nether inhabitants might be hiding a &ltalisman&r capable of nullifying the effects of radiation..."]
 			hide_dependent_lines: true
@@ -1616,7 +1619,7 @@
 				}
 			]
 			title: "Runic Infused Hazmat Armor"
-			x: 6.5d
+			x: 10.5d
 			y: -2.0d
 		}
 		{
@@ -1818,8 +1821,8 @@
 				}
 			]
 			title: "Advanced Singularities"
-			x: 8.5d
-			y: -4.0d
+			x: 9.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -2081,8 +2084,8 @@
 				}
 			]
 			title: "Ancient Armors"
-			x: 5.5d
-			y: -1.0d
+			x: 10.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["5BD0047E69D79476"]

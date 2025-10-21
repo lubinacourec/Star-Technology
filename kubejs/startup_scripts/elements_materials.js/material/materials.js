@@ -307,6 +307,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     matmod('cupronickel', small_spring);
     matmod('kanthal', small_spring);
     matmod('nichrome', small_spring);
+    matmod('tantalum_carbide', foil);
     // matmod('borosilicate_glass', foil); //is force ignored in GT code
 
     // Blast Properties of periodic table metals
@@ -856,7 +857,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         compDust('zapolgium_hydroxide', ['1x zapolgium', '2x oxygen', '2x hydrogen'], 0x00ff99, [no_decomp]);
 
         // Alloys and other compounds
-        conductor('zalloy', ['3x zapolgium', '4x duranium', '2x europium'], 0xff66ff, METALLIC, [10799, 'highest', VHA('zpm'), 3000], [V('uv'), 2, 4, false], [plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, ring]);
+        conductor('zalloy', ['3x zapolgium', '4x duranium', '2x europium'], 0xff66ff, METALLIC, [10799, 'highest', VHA('zpm'), 3000], [V('uv'), 2, 4, false], [plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, ring, dense_plate]);
 
         conductor('zirconium_selenide_diiodide', ['1x zirconium', '1x selenium', '2x iodine'], 0x6600cc, DULL, [8900, 'higher', VA('luv'), 4000], [V('uhv'), 8, 16, false], [spring]);
 
@@ -866,6 +867,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     // Misc
     compIngotLiquid('indium_tin_lead_cadmium_soldering_alloy', ['14x indium', '3x tin', '2x lead', '1x cadmium'], 0xa6a6a6, DULL, [], []);
+
+    compIngotLiquid('naquadated_soldering_alloy', ['3x tin', '18x indium', '6x silver', '4x lanthanum', '3x cerium', '3x naquadah', '1x trinium', '1x bismuth', '2x lead'], 0x8790A1, DULL, [], []);
 
     compIngotLiquid('thorium_plut_duranide_241',  ['4x thorium', '1x duranium', '3x plutonium_241'], 0xEC342A, [], [10199, 'highest', VA('uv'), 850], [fine_wire, no_decomp, foil]);
 
@@ -1431,7 +1434,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(18550, 'highest', VA('uev'), 600)
         .iconSet(SHINY)
         .fluidPipeProperties(120000, 6000, true,true,true,true)
-        .flags(plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, rotor, ring, foil, no_decomp, no_abs_recipe);
+        .flags(plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, rotor, ring, foil, no_decomp, no_abs_recipe, dense_plate);
 
     event.create('nyanium')
         .components('7x aurourium', '4x uranium_rhodium_dinaquadide', '1x magnesium_nitride', '2x pure_netherite')
@@ -1478,7 +1481,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     compDust('indium_tin_oxide', ['2x indium', '2x tin', '3x oxygen'], 0xA1C1E0, [no_decomp]);
 
-    conductor('hafnide_ito_ceramic', ['4x hafnium', '5x tantalum', '5x carbon', '2x indium', '2x tin', '3x oxygen'], 0x798CA5, DULL, [14520, 'highest', VA('uhv'), 3200], [V('uiv'), 2, 36, false], [spring, no_decomp, no_abs_recipe]);
+    conductor('hafnide_ito_ceramic', ['4x hafnium', '5x tantalum', '5x carbon', '2x indium', '2x tin', '3x oxygen'], 0x798CA5, DULL, [14520, 'highest', VA('uhv'), 3200], [V('uiv'), 2, 36, false], [spring, no_decomp, no_abs_recipe, ring]);
 
     compLiquid('polonium_iridide_acid', ['1x iridium', '2x polonium', '1x phosphoric_acid'], 0x8F8B73, [no_decomp]);
 
@@ -1510,7 +1513,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluidPipeProperties(250000, 30, true,true,true,true)
         .flags(plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, rotor, ring, foil, no_decomp, no_abs_recipe);
     
-    compIngotPlasma('ohmderblux_alloy', ['5x chalyblux', '2x maraging_steel_300', '4x zirconium', '9x glowstone', '3x ultimet'], 0xD0B660, SHINY, [18590, 'highest', VA('uiv'), 600], [plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, ring, no_decomp, no_abs_recipe]);
+    compIngotPlasma('ohmderblux_alloy', ['5x chalyblux', '2x maraging_steel_300', '4x zirconium', '9x glowstone', '3x ultimet'], 0xD0B660, SHINY, [18590, 'highest', VA('uiv'), 600], [plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, ring, no_decomp, no_abs_recipe, dense_plate]);
 
     event.create('draconic_enrichment_serum').fluid().color(0xAC97C5);
 
@@ -1592,6 +1595,17 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     compLiquid('maxwellium','1x mystery',0x37374C,[no_decomp]);
 
     compDust('thallium_antimonide',['1x thallium','1x antimony'],0xADC5E3,[])
+
+    event.create('rhenate_w') 
+        .components('2x rhenium', '5x tungsten', '1x neutronium', '18x gold', '7x neodymium') 
+        .ingot()
+        .fluid()
+        .plasma()
+        .color(0x87bcd0)
+        .iconSet(SHINY) 
+        .blastTemp(18685, 'highest', VA('uiv'), 600) 
+        .cableProperties(V('uiv'), 1, 192, false) 
+        .flags(plates, rod, ring, no_decomp, no_abs_recipe);
     
     compLiquidStill('lepton_dense_akreyrium', ['1x utopian_akreyrium', '1x mystery'], [no_decomp]);
 

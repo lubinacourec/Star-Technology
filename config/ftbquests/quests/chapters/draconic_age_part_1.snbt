@@ -240,7 +240,7 @@
 				}
 			]
 			title: "Advanced Cooling Materials"
-			x: -3.0d
+			x: -5.0d
 			y: -5.0d
 		}
 		{
@@ -1064,19 +1064,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["09B55AFE7C06EC82"]
-			id: "41B4DE81AFC054B9"
-			invisible: true
-			optional: true
-			tasks: [{
-				id: "06B8EC7B4599E429"
-				title: "Draconic Nursery"
-				type: "checkmark"
-			}]
-			x: 4.0d
-			y: 2.0d
-		}
-		{
 			dependencies: ["45E628CF1DA8D380"]
 			id: "37F9C85CFCFFDA5F"
 			rewards: [{
@@ -1111,8 +1098,8 @@
 				item: "start_core:uiv_auxiliary_boosted_fusion_reactor"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -6.0d
+			x: 10.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -1174,24 +1161,11 @@
 				item: "start_core:uiv_parallel_hatch"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 7.0d
 			y: -5.0d
 		}
 		{
-			dependencies: ["41B4DE81AFC054B9"]
-			icon: "minecraft:dragon_egg"
-			id: "17BDBDAE35BD49ED"
-			optional: true
-			tasks: [{
-				id: "1F13D3464D748364"
-				title: "Draconic Scale Infusion"
-				type: "checkmark"
-			}]
-			x: 5.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["2DACE6EF41A118D9"]
+			dependencies: ["20ABDF48307586F2"]
 			id: "10D5DA8708208783"
 			invisible: true
 			optional: true
@@ -1676,7 +1650,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: -5.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["16FDCABFC80579D5"]
@@ -1692,8 +1666,8 @@
 				item: "kubejs:awakened_draconic_wetware_processor_mainframe"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -6.0d
+			x: 8.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["3AE6E85C2FC76DE9"]
@@ -1709,8 +1683,8 @@
 				item: "kubejs:awakened_draconic_wetware_processor_computer"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -4.0d
+			x: 8.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -1729,8 +1703,8 @@
 				item: "kubejs:awakened_draconic_wetware_processor_assembly"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -2.0d
+			x: 8.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1770,8 +1744,8 @@
 				item: "start_core:uiv_absolute_parallel_hatch"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -3.0d
+			x: 6.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["2DACE6EF41A118D9"]
@@ -1815,8 +1789,8 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: 6.0d
+			x: -1.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -1862,8 +1836,8 @@
 				item: "gtceu:lepton_resonant_thallium_antimonide_ingot"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 4.0d
+			x: 3.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -1916,31 +1890,37 @@
 				{
 					id: "6EB2E502307FD68B"
 					item: "gtceu:astatine_dust"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "2EF27226B4421028"
 					item: "gtceu:hafnium_ingot"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "40DF21759AAC967F"
 					item: "gtceu:oganesson_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "4DB45A3890461BBE"
 					item: "gtceu:seaborgium_ingot"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "2B8F32628ADE10FD"
 					item: "gtceu:flerovium_ingot"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "76C80A0C990C6672"
 					item: "gtceu:polonium_ingot"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1978,8 +1958,8 @@
 				item: "gtceu:maxwellium_bucket"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -4.0d
+			x: 10.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["4DF07CB3D60C901C"]
@@ -2054,56 +2034,67 @@
 				item: "gtceu:polonium_bismide_ingot"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -3.0d
+			x: -3.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
-				"5944C4DE27F98FF3"
-				"378FF6C9198001A4"
+				"694E1F6458D5F72F"
+				"3B1453C435E3950B"
 			]
 			description: [
 				"stuff"
 				"things"
 				"non-tooltip information"
-				""
-				""
-				""
-				"Expetidally D-17 is great for high durability Turbines"
 			]
+			hide_dependent_lines: true
 			id: "4A13D4F1B22DBCAF"
 			shape: "gear"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "6A05D7EFE5CC5E6D"
 				item: "gtceu:multithreaded_component_synthesis_forge"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -6.0d
+			x: 10.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["5944C4DE27F98FF3"]
-			hide_dependent_lines: true
-			id: "378FF6C9198001A4"
+			dependencies: ["4A13D4F1B22DBCAF"]
+			id: "20ABDF48307586F2"
+			invisible: true
 			tasks: [{
-				id: "58E407F43C0C612D"
-				item: "gtceu:uhv_stabilization_module"
-				type: "item"
+				id: "2E0B74B3D5415EFB"
+				title: "KOMARU"
+				type: "checkmark"
 			}]
-			x: 4.0d
-			y: -4.0d
+			x: 13.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["1C9396E2587051F7"]
-			id: "375EE076393D2858"
+			dependencies: [
+				"6A82CC9F01960097"
+				"2DACE6EF41A118D9"
+			]
+			id: "7C050BBD087D46BD"
 			tasks: [{
-				id: "0D23931ACF5170E1"
-				item: "kubejs:multithread_data_module"
+				id: "05618BF060AA0AB4"
+				item: "gtceu:atomic_sythesis_plant"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 5.0d
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0168A45EB73911AC"]
+			id: "49E80236C69B95C1"
+			tasks: [{
+				id: "6BACF640E12ACD2E"
+				item: "gtceu:component_part_hub"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.0d
 		}
 	]
 	title: "Draconic Empires"

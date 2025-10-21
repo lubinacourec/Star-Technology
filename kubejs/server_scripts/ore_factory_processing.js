@@ -106,10 +106,6 @@ const fluids = {
     distilled_water: 'gtceu:distilled_water 100',
     sodium_persulfate: 'gtceu:sodium_persulfate 100',
     sodium_persulfate_5x: 'gtceu:sodium_persulfate 500',
-    water_bulk: 'minecraft:water 25600',
-    distilled_bulk: 'gtceu:distilled_water 25600',
-    sodium_persulfate_bulk: 'gtceu:sodium_persulfate 25600',
-    sodium_persulfate_5x_bulk: 'gtceu:sodium_persulfate 128000'
 };
 
 /*
@@ -209,13 +205,13 @@ const plant_primitive_processing = (event, materialObj) => {
         .EUt(GTValues.VHA[GTValues.LV]);
 
     event.recipes.gtceu.bulk_ore_processing_array(id(`${materialObj.material}`))
-        .itemInputs(crushed_ore(materialObj.material, 256))
-        .inputFluids(fluids.water_bulk)
-        .itemOutputs(dust(materialObj.material, 256))
-        .itemOutputs(dust(materialObj.material, 256))
-        .itemOutputs(dust(materialObj.secondary, 180))
-        .itemOutputs(dust(materialObj.tertiary, 144))
-        .duration(240 * 256 * .75)
+        .itemInputs(crushed_ore(materialObj.material, 1))
+        .inputFluids(fluids.water)
+        .itemOutputs(dust(materialObj.material, 1))
+        .itemOutputs(dust(materialObj.material, 1))
+        .chancedOutput(dust(materialObj.secondary, 1), 8000, 0)
+        .chancedOutput(dust(materialObj.tertiary, 1), 6500, 0)
+        .duration(240)
         .EUt(GTValues.VHA[GTValues.LV]);
 
 };
@@ -246,14 +242,14 @@ const plant_electric_processing = (event, materialObj, tier) => {
         .EUt(voltages[tier]);
 
     event.recipes.gtceu.bulk_ore_processing_array(id(`${materialObj.material}`))
-        .itemInputs(crushed_ore(materialObj.material, 256))
-        .inputFluids(fluid_bulk)
-        .itemOutputs(dust(materialObj.material, 256))
-        .itemOutputs(dust(materialObj.material, 192))
-        .itemOutputs(dust(materialObj.secondary, 154))
-        .itemOutputs(dust(materialObj.tertiary, 90))
-        .itemOutputs(dust(materialObj.quaternary, 52))
-        .duration(240 * 256 * .75)
+        .itemInputs(crushed_ore(materialObj.material, 1))
+        .inputFluids(fluid)
+        .itemOutputs(dust(materialObj.material, 1))
+        .chancedOutput(dust(materialObj.material, 1), 9000, 0)
+        .chancedOutput(dust(materialObj.secondary, 1), 7000, 0)
+        .chancedOutput(dust(materialObj.tertiary, 1), 4500, 0)
+        .chancedOutput(dust(materialObj.quaternary, 1), 3000, 0)
+        .duration(240)
         .EUt(voltages[tier]);
 };
 
@@ -274,15 +270,15 @@ const plant_ore_processing = (event, materialObj) => {
         .EUt(GTValues.VA[GTValues.IV]);
 
     event.recipes.gtceu.bulk_ore_processing_array(id(`${materialObj.material}`))
-        .itemInputs(crushed_ore(materialObj.material, 256))
-        .inputFluids(fluids.sodium_persulfate_5x_bulk)
-        .itemOutputs(dust(materialObj.material, 256))
-        .itemOutputs(dust(materialObj.material, 216))
-        .itemOutputs(dust(materialObj.secondary, 160))
-        .itemOutputs(dust(materialObj.tertiary, 96))
-        .itemOutputs(dust(materialObj.quaternary, 54))
-        .itemOutputs(dust(materialObj.quinary, 30))
-        .duration(320 * 256 * .5)
+        .itemInputs(crushed_ore(materialObj.material, 1))
+        .inputFluids(fluids.sodium_persulfate_5x)
+        .itemOutputs(dust(materialObj.material, 1))
+        .itemOutputs(dust(materialObj.material, 1))
+        .chancedOutput(dust(materialObj.secondary, 1), 7500, 0)
+        .chancedOutput(dust(materialObj.tertiary, 1), 5000, 0)
+        .chancedOutput(dust(materialObj.quaternary, 1), 3000, 0)
+        .chancedOutput(dust(materialObj.quinary, 1), 2000, 0)
+        .duration(320)
         .EUt(GTValues.VA[GTValues.IV]);
 };
 
