@@ -522,8 +522,8 @@ ServerEvents.recipes(event => {
         const Gato = (type, rod1, rod2, dye1, dye2) => {
             let B = '16x kubejs:runic_energized_transportation_plating';
             let C = '16x kubejs:runic_energized_pathway_plating';
-            let R = `1x kubejs:${rod1}_stargate_rod`;
-            let D = `1x kubejs:${rod2}_stargate_rod`;
+            let R = `2x kubejs:${rod1}_stargate_rod`;
+            let D = `2x kubejs:${rod2}_stargate_rod`;
             let F = '8x gtceu:uiv_field_generator';
             let A = '8x gtceu:uiv_robot_arm';
             let H = '64x #forge:cooked_fishes'
@@ -536,14 +536,16 @@ ServerEvents.recipes(event => {
         };
         Gato('valenok', 'abyssal', 'abyssal', 'light_gray', 'gray');
         Gato('mars', 'abyssal', 'infernal', 'white', 'orange');
+        Gato('poomba', 'infernal', 'abyssal', 'brown', 'black');
         Gato('vasilisa', 'infernal', 'infernal', 'gray', 'white');
         {
-            let M = 'placeablemaxwell:valenok'
-            let V = 'placeablemaxwell:mars'
+            let V = 'placeablemaxwell:valenok'
+            let M = 'placeablemaxwell:mars'
             let S = 'placeablemaxwell:vasilisa'
+            let P = 'placeablemaxwell:poomba'
         event.recipes.gtceu.gate_assembly(id(`maxwell`))
-            .itemInputs(S,M,V,S,V,M,S,M,V,S,V,M,S,M,V,S,V,M,S,M,V,S,V,M)
-            .inputFluids('gtceu:nyanium 144000', `gtceu:black_dye 2500000`, `gtceu:maxwellium 72000`)
+            .itemInputs(V,M,S,P,V,M,S,P,V,M,S,P,V,M,S,P,V,M,S,P,V,M,S,P)
+            .inputFluids('gtceu:maxwellium 444444', `gtceu:black_dye 2500000`, `gtceu:pure_dragon_breath 250000`)
             .itemOutputs(`placeablemaxwell:maxwell`)
             .duration(64000)
             .EUt(GTValues.VA[GTValues.UXV]);
