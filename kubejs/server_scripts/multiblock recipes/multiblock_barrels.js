@@ -199,15 +199,13 @@ ServerEvents.recipes(event => {
         .inputFluids(`gtceu:nether_air 500`)
         .itemOutputs(`exnihilosequentia:crimson_nylium_spores`)
         .duration(200)
-        .dimension('minecraft:the_nether')
-        .EUt(GTValues.VHA[GTValues.EV]);
+        .EUt(GTValues.VHA[GTValues.IV]);
 
     event.recipes.gtceu.industrial_barrel_aqueous(id(`warped_nylium_spores`))
         .itemInputs('exnihilosequentia:crimson_nylium_spores', 'gtceu:warped_dust')
         .inputFluids(`gtceu:ender_air 500`)
         .itemOutputs(`exnihilosequentia:warped_nylium_spores`)
         .duration(200)
-        .dimension('minecraft:the_nether')
         .EUt(GTValues.VHA[GTValues.IV]);
 
     event.recipes.gtceu.industrial_barrel_aqueous(id(`nether_wart_block`))
