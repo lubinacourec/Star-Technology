@@ -283,9 +283,22 @@ ServerEvents.recipes(event => {
             .inputFluids(fluids)
             .itemOutputs(`${MCSF_Scaler}x gtceu:${Tier}_${type}`)
             .duration(MCSF_Scaler * duration / 4)
-            //Will also need to rearch self using Multithread Data Module
-            .EUt(3 * eut)
+            .stationResearch(
+                researchRecipeBuilder => researchRecipeBuilder
+                    .researchStack(Item.of(`gtceu:${Tier}_${type}`))
+                    .EUt(eut / 4)
+                    .CWUt(320)
+            )            
+            .EUt(eut)
             .cleanroom(CleanroomType.getByName('stabilized'));
+
+        event.recipes.gtceu.research_station(`1_x_gtceu_${Tier}_${type}`)
+            .itemInputs('start_core:component_data_core')
+            .itemInputs(`gtceu:${Tier}_${type}`)
+            .itemOutputs(Item.of(`start_core:component_data_core`, `{assembly_line_research:{research_id:"1x_gtceu_${Tier}_${type}",research_type:"gtceu:component_synthesis_forge"}}`))
+            .CWUt(320)
+            .totalCWU(320 * 60 * 20)
+            .EUt(eut / 4);
         }
 
         MCSF_Components('electric_motor', [`${MCSF_Scaler * .75}x kubejs:${Tier}_super_magnetic_core`, `${2 * MCSF_Scaler * .75}x gtceu:long_${Primary}_rod`, `${MCSF_Scaler * .75}x kubejs:${Tier}_transmission_assembly`, `${MCSF_Scaler * .75}x kubejs:${Tier}_micropower_router`, `${16 * MCSF_Scaler * .75}x gtceu:fine_${WireTypeMechanical}_wire`, `${16 * MCSF_Scaler * .75}x gtceu:fine_${WireTypeMechanical}_wire`, `${16 * MCSF_Scaler * .75}x gtceu:fine_${WireTypeMechanical}_wire`, `${16 * MCSF_Scaler * .75}x gtceu:fine_${WireTypeMechanical}_wire`],
@@ -318,10 +331,23 @@ ServerEvents.recipes(event => {
             .itemInputs(inputs)
             .inputFluids(fluids)
             .itemOutputs(`${MCSF_Scaler}x kubejs:${Tier}_${type}`)
-            .duration(MCSF_Scaler * duration)
-            //Will also need to rearch self using Multithread Data Module
+            .duration(MCSF_Scaler * duration / 4)
+            .stationResearch(
+                researchRecipeBuilder => researchRecipeBuilder
+                    .researchStack(Item.of(`gtceu:${Tier}_${type}`))
+                    .EUt(eut / 4)
+                    .CWUt(320)
+            )            
             .EUt(eut)
             .cleanroom(CleanroomType.getByName('stabilized'));
+
+        event.recipes.gtceu.research_station(`1_x_kubejs_${Tier}_${type}`)
+            .itemInputs('start_core:component_data_core')
+            .itemInputs(`kubejs:${Tier}_${type}`)
+            .itemOutputs(Item.of(`start_core:component_data_core`, `{assembly_line_research:{research_id:"1x_kubejs_${Tier}_${type}",research_type:"gtceu:component_part_synthesis_forge"}}`))
+            .CWUt(320)
+            .totalCWU(320 * 60 * 20)
+            .EUt(eut / 4);
         }
 
         MCSF_Component_Parts('computational_matrix', [`${MCSF_Scaler * .75}x gtceu:${Primary}_frame`, `${MCSF_Scaler * .75}x #gtceu:circuits/${Tier}`, `${2 * MCSF_Scaler * .75}x #gtceu:circuits/${Tier1}`, `${3 * MCSF_Scaler * .75}x #gtceu:circuits/${Tier2}`, `${4 * MCSF_Scaler * .75}x gtceu:fine_${WireTypeComputational}_wire`, `${MCSF_Scaler * .75 * (2**Scaler)}x kubejs:qram_chip`, `${MCSF_Scaler * .75 * (2**Scaler)}x kubejs:qram_chip`],
@@ -363,8 +389,13 @@ ServerEvents.recipes(event => {
                 .inputFluids(fluids)
                 .inputFluids(`gtceu:naquadria ${MCSF_Scaler*.75*576}`)
                 .itemOutputs(`${MCSF_Scaler}x gtceu:${Tier}_${type}`)
-                .duration(MCSF_Scaler * 600)
-                //Will also need to rearch self using Multithread Data Module
+                .duration(MCSF_Scaler * 600 / 4)
+                .stationResearch(
+                    researchRecipeBuilder => researchRecipeBuilder
+                        .researchStack(Item.of(`gtceu:${Tier}_${type}`))
+                        .EUt(eut / 4)
+                        .CWUt(320)
+                )            
                 .EUt(eut)
                 .cleanroom(CleanroomType.getByName('stabilized'));
             } else {
@@ -372,11 +403,23 @@ ServerEvents.recipes(event => {
                 .itemInputs(inputs)
                 .inputFluids(fluids)
                 .itemOutputs(`${MCSF_Scaler}x gtceu:${Tier}_${type}`)
-                .duration(MCSF_Scaler * 600)
-                //Will also need to rearch self using Multithread Data Module
+                .duration(MCSF_Scaler * 600 / 4)
+                .stationResearch(
+                    researchRecipeBuilder => researchRecipeBuilder
+                        .researchStack(Item.of(`gtceu:${Tier}_${type}`))
+                        .EUt(eut / 4)
+                        .CWUt(320)
+                )            
                 .EUt(eut)
-                .cleanroom(CleanroomType.getByName('stabilized'));    
+                .cleanroom(CleanroomType.getByName('stabilized'));
             }
+        event.recipes.gtceu.research_station(`1_x_gtceu_${Tier}_${type}`)
+            .itemInputs('start_core:component_data_core')
+            .itemInputs(`gtceu:${Tier}_${type}`)
+            .itemOutputs(Item.of(`start_core:component_data_core`, `{assembly_line_research:{research_id:"1x_gtceu_${Tier}_${type}",research_type:"gtceu:component_synthesis_forge"}}`))
+            .CWUt(320)
+            .totalCWU(320 * 60 * 20)
+            .EUt(eut / 4);
         }
 
         MCSF_Components_PreUHV('electric_motor',[`${MCSF_Scaler * .75}x gtceu:long_magnetic_samarium_rod`,`${4 * MCSF_Scaler * .75}x gtceu:long_${Primary}_rod`,`${4 * MCSF_Scaler * .75}x gtceu:${Primary}_ring`,`${8 * MCSF_Scaler * .75}x gtceu:${Primary}_round`,`${16 * MCSF_Scaler * .75}x gtceu:fine_${MechanicalWire}_wire`,`${16 * MCSF_Scaler * .75}x gtceu:fine_${MechanicalWire}_wire`,`${16 * MCSF_Scaler * .75}x gtceu:fine_${MechanicalWire}_wire`,`${16 * MCSF_Scaler * .75}x gtceu:fine_${MechanicalWire}_wire`,`${2 * MCSF_Scaler * .75}x gtceu:${Cable}_single_cable`],
