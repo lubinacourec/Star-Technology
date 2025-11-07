@@ -44,6 +44,33 @@ ServerEvents.recipes(event => {
 
     });
 
+    event.recipes.gtceu.hydroponic_garden(id('chorus_fruit_harvest_harvest_npk'))
+        .notConsumable('8x minecraft:chorus_flower')
+        .inputFluids('gtceu:ender_air 250')
+        .itemOutputs('64x minecraft:chorus_fruit')
+        .chancedOutput('32x minecraft:chorus_flower', 5000, 0)
+        .duration(600)
+        .EUt(global.vha['lv'])
+        .circuit(0);
+
+    event.recipes.gtceu.hydroponic_garden(id('chorus_fruitharvest_nrf'))
+        .notConsumable('8x minecraft:chorus_flower')
+        .inputFluids('gtceu:ender_air 250', 'gtceu:nutrient_rich_fertilizer_solution 100')
+        .itemOutputs('128x minecraft:chorus_fruit')
+        .chancedOutput('64x minecraft:chorus_flower', 5000, 0)
+        .duration(300)
+        .EUt(global.vha['lv'])
+        .circuit(1);
+
+    event.recipes.gtceu.hydroponic_garden(id('chorus_fruit_harvest_biostimulating'))
+        .notConsumable('8x minecraft:chorus_flower')
+        .inputFluids('gtceu:ender_air 250', 'gtceu:biostimulating_mixture 100')
+        .itemOutputs('256x minecraft:chorus_fruit')
+        .chancedOutput('128x minecraft:chorus_flower', 5000, 0)
+        .duration(150)
+        .EUt(global.vha['lv'])
+        .circuit(2);
+
     // Nutrient Rich Fertilizer Solution (NRF Solution)
     event.recipes.gtceu.large_chemical_reactor(id('nutrient_rich_fertilizer_solution'))
         .itemInputs('gtceu:tiny_phosphate_dust','gtceu:small_bone_dust')
