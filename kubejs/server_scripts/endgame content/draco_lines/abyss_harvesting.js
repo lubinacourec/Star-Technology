@@ -19,13 +19,13 @@ ServerEvents.recipes(event => {
             )
         .EUt(GTValues.VA[GTValues.UIV]);
 
-    event.recipes.gtceu.draco_infusion(id('draneko_casing'))
-        .itemInputs('gtceu:nyanium_frame', '2x gtceu:double_isovol_plate', 'gtceu:double_nyanium_plate', '2x kubejs:draconic_scale_cells', 
-            '2x kubejs:draconic_scale_cells', 'gtceu:double_nyanium_plate', '2x gtceu:double_isovol_plate')
-        .inputFluids('gtceu:dragon_breath 4000')
-        .itemOutputs('2x kubejs:draneko_casing')
-        .duration(400)
-        .EUt(GTValues.VHA[GTValues.UEV]);
+    // event.recipes.gtceu.draco_infusion(id('draneko_casing'))
+    //     .itemInputs('gtceu:nyanium_frame', '2x gtceu:double_isovol_plate', 'gtceu:double_nyanium_plate', '2x kubejs:draconic_scale_cells', 
+    //         '2x kubejs:draconic_scale_cells', 'gtceu:double_nyanium_plate', '2x gtceu:double_isovol_plate')
+    //     .inputFluids('gtceu:dragon_breath 4000')
+    //     .itemOutputs('2x kubejs:draneko_casing')
+    //     .duration(400)
+    //     .EUt(GTValues.VHA[GTValues.UEV]);
 
     event.recipes.gtceu.assembler(id('mythrolic_drill_casing'))
         .itemInputs('gtceu:nyanium_frame', 'gtceu:uhv_emitter', '6x gtceu:double_mythrolic_alloy_plate', '2x gtceu:mythrolic_alloy_gear', '4x gtceu:small_mythrolic_alloy_gear')

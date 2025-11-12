@@ -83,8 +83,8 @@ ServerEvents.recipes(event => {
         .cleanroom(CleanroomType.STERILE_CLEANROOM);
 
     event.recipes.gtceu.draco_infusion(id('uipic_wafer'))
-        .itemInputs('kubejs:uepic_wafer','4x gtceu:silicon_carbide_over_bismuth_tritelluride_dust', '2x kubejs:draconic_stem_cells','2x kubejs:draconic_stem_cells',
-             '4x gtceu:silicon_carbide_over_bismuth_tritelluride_dust','4x gtceu:silicon_carbide_over_bismuth_tritelluride_dust', '2x kubejs:draconic_stem_cells')
+        .itemInputs('kubejs:uepic_wafer','1x gtceu:draconyallium_foil','16x gtceu:silicon_carbide_over_bismuth_tritelluride_dust',
+            'gtceu:naquadah_foil','gtceu:neutronium_foil','4x kubejs:draconic_stem_cells','gtceu:vanadium_gallium_foil')
         .inputFluids('gtceu:pure_dragon_breath 2000')
         .itemOutputs('kubejs:uipic_wafer')
         .duration(800)

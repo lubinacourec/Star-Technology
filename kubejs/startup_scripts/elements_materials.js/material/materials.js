@@ -230,7 +230,7 @@ GTCEuStartupEvents.materialModification(event => {
     GTMaterials.get('rare_earth').setFormula('?');
     GTMaterials.get('platinum_group_sludge').setFormula('Pt?');
     // GTMaterials.get('draconyallium').setFormula('🜍Dr68Ag20O94N76🜍');
-    // GTMaterials.get('draco_abyssal').setFormula('🜍∅🜍');
+    GTMaterials.get('draco_abyssal').setFormula('🜍∅🜍');
     GTMaterials.get('silver_sulfate').setFormula('Ag2(SO4)');
     GTMaterials.get('chromium_sulfate').setFormula('Cr2(SO4)3');
     GTMaterials.get('sparse_electron_akreyrium').setFormula('Ak(?e?)?');
@@ -750,7 +750,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         //Extended Debris
         compDustLiquid('ancient_debris', ['1x mystery'], 0x603d1a, [no_decomp]);
 
-        elemIngotFluid('ancient_netherite', 0x46271b, DULL, [12349, 'low', VA('uev'), 1200], [plates,rod,no_decomp,dense_plate,frame,long_rod]);
+        elemIngotFluid('ancient_netherite', 0x46271b, DULL, [12349, 'low', VA('uev'), 1200], [plates,rod,no_decomp,dense_plate,frame,long_rod,foil]);
 
         //Atomic Nether Dust Line
         compDustIcon('atomic_nether_sludge', ['1x mystery','1x mystery','1x mystery','1x mystery'], 0x883039, RADIOACTIVE, [no_decomp]);
@@ -1607,7 +1607,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     compIngotPlasmaSecColor('borealic_steel',['2x prismalium', '4x rose_gold', '11x aurourium', '2x titan_steel', '1x ancient_netherite'],0x8f7090,0x70907c,SHINY,[18880, 'highest', VA('uxv'), 600],[plates, frame, rod, dense_plate, long_rod, gear, small_gear, no_decomp, no_abs_recipe]);
 
-    compIngotPlasmaSecColor('hvga_steel',['1x signalum','3x hssg','1x shadowwyrm_holder','8x hsla_steel','3x titan_steel'],0x280c6c,0x2561b7,SHINY,[18880, 'highest', VA('uxv'), 600],[plates, frame, rod, dense_plate, long_rod, gear, small_gear, no_decomp, no_abs_recipe]);
+    compIngotPlasmaSecColor('hvga_steel',['1x signalum','3x hssg','1x shadowwyrm_holder','8x hsla_steel','3x titan_steel'],0x280c6c,0x2561b7,SHINY,[18880, 'highest', VA('uxv'), 600],[plates, frame, rod, dense_plate, long_rod, gear, small_gear, rotor, no_decomp, no_abs_recipe]);
 
     compIngotPlasmaSecColor('melastrium_mox',['2x osmiridium','7x astrenalloy_nx','3x melodium','1x potin'],0x7d486d,0x4c487d,SHINY,[18880, 'highest', VA('uxv'), 600],[plates, frame, rod, dense_plate, long_rod, gear, small_gear, no_decomp, no_abs_recipe]);
 

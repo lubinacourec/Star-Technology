@@ -91,8 +91,8 @@
 				item: "kubejs:husk_of_the_flame"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -2.0d
+			x: -7.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["4DF07CB3D60C901C"]
@@ -1098,7 +1098,7 @@
 				item: "start_core:uiv_auxiliary_boosted_fusion_reactor"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 8.0d
 			y: -4.0d
 		}
 		{
@@ -1918,7 +1918,7 @@
 				item: "gtceu:maxwellium_bucket"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 10.0d
 			y: -4.0d
 		}
 		{
@@ -2133,7 +2133,106 @@
 				type: "item"
 			}]
 			x: 12.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["31F87896FF834E63"]
+			id: "076F21506A7C19D5"
+			tasks: [{
+				id: "37C21F56452F96BB"
+				item: "start_core:threading_controller"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["076F21506A7C19D5"]
+			id: "553A8FA2F468DD90"
+			tasks: [{
+				id: "418FB6F41909F13D"
+				title: "Go Read About Threading"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["553A8FA2F468DD90"]
+			id: "1B661108D7577FBE"
+			tasks: [{
+				id: "59018BE6CC6BB9ED"
+				item: "start_core:uv_supreme_thread_helix"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1B661108D7577FBE"]
+			id: "13508A2A55EAA6E1"
+			tasks: [{
+				id: "303F341173DA5E7E"
+				item: "start_core:uev_supreme_thread_helix"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["553A8FA2F468DD90"]
+			id: "35C687F2D0931ECB"
+			tasks: [{
+				id: "1BEE5380EFFC6A96"
+				item: "start_core:uhv_overdrive_thread_helix"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["553A8FA2F468DD90"]
+			id: "549D02412C9707FB"
+			tasks: [{
+				id: "326C0279ED6466B6"
+				item: "start_core:uhv_coprocessor_thread_helix"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["553A8FA2F468DD90"]
+			id: "652C158FF3FC6090"
+			tasks: [{
+				id: "11F882D8186CBA98"
+				item: "start_core:uhv_weaving_thread_helix"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1EB60E6DE2086158"]
+			id: "68204750A7B0569E"
+			tasks: [{
+				id: "3E40AC452445186E"
+				title: "Catalyst Boosting"
+				type: "checkmark"
+			}]
+			x: -6.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["076F21506A7C19D5"]
+			id: "589A4AA6BF7C5097"
+			tasks: [{
+				id: "4FD2D9338A2024D0"
+				title: "Threading Multis"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 6.0d
 		}
 	]
 	title: "{ftbquests.chapter.draconic_age_part_1.title}"
