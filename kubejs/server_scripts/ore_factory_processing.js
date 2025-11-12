@@ -35,7 +35,14 @@ const oreProcessableTiers = {
         { material: 'quartzite', secondary: 'certus_quartz', tertiary: 'opal', quaternary: 'barite' },  // check
         { material: 'certus_quartz', secondary: 'quartzite', tertiary: 'opal', quaternary: 'barite' },  // check
         { material: 'rock_salt', secondary: 'salt', tertiary: 'salt', quaternary: 'borax' },
-        { material: 'saltpeter', secondary: 'salt', tertiary: 'potassium', quaternary: 'alunite' }  // check
+        { material: 'saltpeter', secondary: 'salt', tertiary: 'potassium', quaternary: 'alunite' },  // check
+        // mystical agriculture
+        { material: 'salt', secondary: 'rock_salt', tertiary: 'rock_salt', quaternary: 'borax' },
+        { material: 'amethyst', secondary: 'amethyst', tertiary: 'amethyst', quaternary: 'amethyst' },
+        { material: 'sulfur', secondary: 'sulfur', tertiary: 'sulfur', quaternary: 'sulfur' },
+        // { material: 'redstone', secondary: 'cinnabar', tertiary: 'rare_earth', quaternary: 'ruby' }, // not gonna rewrite entire thing just for an MA ore (is minecraft:redstone not gtceu:redstone_dust)
+        { material: 'lapis', secondary: 'lazurite', tertiary: 'sodalite', quaternary: 'pyrite' },
+        { material: 'nether_quartz', secondary: 'quartzite', tertiary: 'quartzite', quaternary: 'quartzite' }
     ],
 
     'mv': [
@@ -47,7 +54,11 @@ const oreProcessableTiers = {
         { material: 'lepidolite', secondary: 'lithium', tertiary: 'lithium', quaternary: 'caesium' },
         { material: 'pyrochlore', secondary: 'apatite', tertiary: 'apatite', quaternary: 'calcium' },
         { material: 'pyrolusite', secondary: 'manganese', tertiary: 'manganese', quaternary: 'tantalite' },
-        { material: 'magnesite', secondary: 'magnesium', tertiary: 'magnesium', quaternary: 'cobaltite' }
+        { material: 'magnesite', secondary: 'magnesium', tertiary: 'magnesium', quaternary: 'cobaltite' },
+        // mystical agriculture
+        { material: 'red_garnet', secondary: 'spessartine', tertiary: 'pyrope', quaternary: 'almandine' },
+        { material: 'yellow_garnet', secondary: 'andradite', tertiary: 'grossular', quaternary: 'uvarovite' },
+        { material: 'garnet_sand', secondary: 'red_garnet', tertiary: 'yellow_garnet', quaternary: 'yellow_garnet' }
     ],
 
     'hv': [
@@ -76,6 +87,7 @@ const oreProcessableTiers = {
     ],
 
     'iv': [
+        { material: 'naquadah', secondary: 'barium', tertiary: 'sulfur', quaternary: 'enriched_naquadah', quinary: 'enriched_naquadah'  },
         { material: 'titanite', secondary: 'rutile', tertiary: 'rare_earth', quaternary: 'bauxite', quinary: 'pyrite' },
         { material: 'zapolite', secondary: 'lautarite', tertiary: 'iodargyrite', quaternary: 'titanite', quinary: 'tungstate' },
         { material: 'lautarite', secondary: 'clausthalite', tertiary: 'stibnite', quaternary: 'calaverite', quinary: 'sylvanite' },
@@ -89,7 +101,10 @@ const oreProcessableTiers = {
         { material: 'stibiopalladinite', secondary: 'clausthalite', tertiary: 'berzelianite', quaternary: 'tiemannite', quinary: 'stibiopalladinite' },
         { material: 'berzelianite', secondary: 'umangite', tertiary: 'aguilarite', quaternary: 'polybasite', quinary: 'berzelianite' },
         { material: 'umangite', secondary: 'berzelianite', tertiary: 'aguilarite', quaternary: 'polybasite', quinary: 'umangite' },
-        { material: 'aguilarite', secondary: 'berzelianite', tertiary: 'umangite', quaternary: 'polybasite', quinary: 'aguilarite' }
+        { material: 'aguilarite', secondary: 'berzelianite', tertiary: 'umangite', quaternary: 'polybasite', quinary: 'aguilarite' },
+        { material: 'strontianite', secondary: 'celestine', tertiary: 'berzelianite', quaternary: 'umangite', quinary: 'aguilarite'  },
+        // mystical agriculture
+        { material: 'celestine', secondary: 'strontianite', tertiary: 'aguilarite', quaternary: 'umangite', quinary: 'berzelianite'  }
     ]
 };
 

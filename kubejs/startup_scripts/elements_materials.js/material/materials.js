@@ -526,7 +526,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xcc00cc)
         .iconSet(DULL)
         .blastTemp(10799, 'highest', VA('uhv'), 1600)
-        .flags(plates, rod, frame)
+        .flags(plates, rod, frame, long_rod)
         .fluidPipeProperties(18000, 7200, true,true,true,true);
 
     // Thermal Superconductors
