@@ -447,24 +447,6 @@ ServerEvents.recipes(event => {
         .cleanroom($StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM)
         .EUt(GTValues.VHA[GTValues.UIV]);
 
-    event.recipes.gtceu.chemical_reactor(id('better_draco_stem_cells'))
-        .itemInputs('gtceu:small_draconyallium_dust')
-        .inputFluids('gtceu:abyssal_nutrient_blend 500','gtceu:draconic_enrichment_serum 2500')
-        .itemOutputs('32x kubejs:draconic_stem_cells')
-        .outputFluids('gtceu:condensed_abyssal_nutrient_blend 100')
-        .duration(500)
-        .cleanroom($StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM)
-        .EUt(GTValues.VHA[GTValues.UIV]);
-
-    event.recipes.gtceu.large_chemical_reactor(id('better_draco_stem_cells'))
-        .itemInputs('gtceu:small_draconyallium_dust')
-        .inputFluids('gtceu:abyssal_nutrient_blend 500','gtceu:draconic_enrichment_serum 2500')
-        .itemOutputs('32x kubejs:draconic_stem_cells')
-        .outputFluids('gtceu:condensed_abyssal_nutrient_blend 100')
-        .duration(300)
-        .cleanroom($StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM)
-        .EUt(GTValues.VHA[GTValues.UIV]);
-
     event.recipes.gtceu.assembly_line(id('abyssal_containment_room'))
         .itemInputs(
             'gtceu:draco_abyssal_frame','8x kubejs:draco_ware_casing','4x kubejs:abyssal_inductor','12x kubejs:uiv_computational_matrix',
@@ -508,12 +490,12 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.UHV]);
 
     event.recipes.gtceu.folding_akreyrium_stabiliser(id('lepton_resonant_thallium_antimonide'))
-        .itemInputs('gtceu:gray_glass_lens','gtceu:thallium_antimonide_dust')
+        .itemInputs('gtceu:gray_glass_lens','gtceu:tiny_thallium_antimonide_dust')
         .inputFluids('gtceu:lepton_dense_akreyrium 1000')
-        .itemOutputs('gtceu:gray_glass_lens','gtceu:lepton_resonant_thallium_antimonide_dust')
+        .itemOutputs('gtceu:gray_glass_lens','gtceu:tiny_lepton_resonant_thallium_antimonide_dust')
         .outputFluids('gtceu:utopian_akreyrium 750','gtceu:lepton_coalescing_superalloy 416')
-        .duration(240)
-        .EUt(GTValues.VHA[GTValues.UHV]);
+        .duration(18)
+        .EUt(GTValues.VHA[GTValues.UIV]);
 
     // UHV Containers
     event.shaped('gtceu:uhv_quantum_chest', [
