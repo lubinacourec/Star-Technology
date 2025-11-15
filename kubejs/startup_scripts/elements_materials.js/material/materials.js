@@ -186,6 +186,7 @@ GTCEuStartupEvents.materialModification(event => {
     GTMaterials.Netherite.setMaterialARGB(0x1a0d00);
     GTMaterials.Netherite.setMaterialIconSet(DULL);
     GTMaterials.Netherite.addFlags(rod, foil);
+    GTMaterials.Lutetium.setProperty(PropertyKey.INGOT, new IngotProperty());
     GTMaterials.get('netherite_trisulfate_complex').setFormula('[*Nr*(SO4)3](OH)2');
     GTMaterials.get('netherite_hexammine_sulfate').setFormula('[*Nr*(NH3)6]SO4');
     GTMaterials.get('glowstone').setFormula('(Si(FeS2)5(CrAl2O3)Hg3)Au');
