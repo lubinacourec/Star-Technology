@@ -411,6 +411,7 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["111033FEFA89BA91"]
 			icon: "gtceu:benzotrichloride_bucket"
 			id: "5D66D12C6EBB3A43"
 			size: 1.0d
@@ -509,6 +510,7 @@
 			y: 10.5d
 		}
 		{
+			dependencies: ["111033FEFA89BA91"]
 			id: "59546613EC1FC027"
 			size: 1.0d
 			tasks: [{
@@ -555,6 +557,7 @@
 			y: 10.5d
 		}
 		{
+			dependencies: ["6CC13BE9AD447218"]
 			description: ["{ftbquests.chapter.processing_lines_chap_456.quest30.description1}"]
 			icon: "gtceu:bacteria_bucket"
 			id: "24AE98EABF69F2D1"
@@ -664,6 +667,7 @@
 			y: 6.5d
 		}
 		{
+			dependencies: ["791DE0AFE1CFD7C7"]
 			description: ["{ftbquests.chapter.processing_lines_chap_456.quest35.description1}"]
 			id: "3DB8A5E51DB80275"
 			size: 1.0d
@@ -1066,6 +1070,7 @@
 			y: 0.5d
 		}
 		{
+			dependencies: ["3A15777DD813EE71"]
 			id: "623816C7D3EB91CD"
 			tasks: [{
 				id: "59713322AEB1606C"
@@ -1158,6 +1163,7 @@
 			y: 5.5d
 		}
 		{
+			dependencies: ["1820787D031EAB15"]
 			id: "357F58FB592B9628"
 			tasks: [{
 				id: "6D47324C12489CA6"
@@ -1396,6 +1402,7 @@
 			y: 9.5d
 		}
 		{
+			dependencies: ["3780C8669F67F77E"]
 			id: "54EC42CB74C59F5F"
 			tasks: [{
 				id: "10359233907E91B4"
@@ -1410,6 +1417,7 @@
 			y: 8.5d
 		}
 		{
+			dependencies: ["53A038A621F3997C"]
 			id: "01D169FDC848B8A1"
 			tasks: [{
 				id: "23B89A7369F30456"
@@ -1452,6 +1460,7 @@
 			y: 7.5d
 		}
 		{
+			dependencies: ["1B97E56660BDCEF6"]
 			id: "4D4E3428BFB10838"
 			tasks: [{
 				id: "59BDD47356361654"
@@ -1533,6 +1542,7 @@
 			y: 4.5d
 		}
 		{
+			dependencies: ["3A15777DD813EE71"]
 			id: "7214D86C55033EAD"
 			tasks: [{
 				id: "77726D5EEEDC7244"
@@ -1845,6 +1855,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["1AAB9C20E833029A"]
 			id: "361BFCF1A91F1CA8"
 			tasks: [{
 				id: "621D74C07227A1DD"
@@ -1859,6 +1870,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["3A15777DD813EE71"]
 			icon: {
 				Count: 1
 				id: "gtceu:chlorine_bucket"
@@ -1886,6 +1898,7 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["170C262792DA7123"]
 			icon: {
 				Count: 1
 				id: "gtceu:benzene_bucket"
@@ -2923,6 +2936,7 @@
 			y: 14.0d
 		}
 		{
+			dependencies: ["1820787D031EAB15"]
 			icon: "gtceu:methanol_bucket"
 			id: "042874C597262403"
 			tasks: [
@@ -2941,6 +2955,7 @@
 			y: 13.0d
 		}
 		{
+			dependencies: ["3A15777DD813EE71"]
 			icon: "gtceu:fluorine_bucket"
 			id: "2FA4D8E5C281EE8F"
 			tasks: [
@@ -2959,6 +2974,7 @@
 			y: 15.0d
 		}
 		{
+			dependencies: ["1AAB9C20E833029A"]
 			icon: "gtceu:vinyl_acetate_bucket"
 			id: "500FB846B2A5EDB1"
 			tasks: [
@@ -3014,6 +3030,7 @@
 			y: 15.5d
 		}
 		{
+			dependencies: ["1AAB9C20E833029A"]
 			icon: "gtceu:hydrofluoric_acid_bucket"
 			id: "3AD0847FDCE274A3"
 			tasks: [
@@ -3032,6 +3049,7 @@
 			y: 16.0d
 		}
 		{
+			dependencies: ["170C262792DA7123"]
 			icon: "gtceu:butadiene_bucket"
 			id: "424C253C168CF038"
 			tasks: [
@@ -3069,6 +3087,7 @@
 			y: 12.75d
 		}
 		{
+			dependencies: ["1AAB9C20E833029A"]
 			icon: "gtceu:acetic_acid_bucket"
 			id: "1B683817D057B4A5"
 			tasks: [
@@ -3087,6 +3106,7 @@
 			y: 13.0d
 		}
 		{
+			dependencies: ["7CACFC7C9101EA59"]
 			icon: "gtceu:maleic_anhydride_bucket"
 			id: "188295DEDBC77EAD"
 			tasks: [
@@ -3255,6 +3275,7 @@
 			y: 15.5d
 		}
 		{
+			dependencies: ["1820787D031EAB15"]
 			icon: "gtceu:nitrobenzene_bucket"
 			id: "5CFDB5A139301559"
 			tasks: [
@@ -3314,6 +3335,7 @@
 			y: 16.0d
 		}
 		{
+			dependencies: ["1820787D031EAB15"]
 			icon: "gtceu:methanol_bucket"
 			id: "7AB2F356B5B0FDFD"
 			tasks: [
@@ -3332,6 +3354,7 @@
 			y: 16.0d
 		}
 		{
+			dependencies: ["1820787D031EAB15"]
 			icon: "gtceu:ammonia_bucket"
 			id: "75B49A50671FBADE"
 			tasks: [
@@ -3484,6 +3507,7 @@
 			y: 8.0d
 		}
 		{
+			dependencies: ["7CACFC7C9101EA59"]
 			icon: "gtceu:magnesium_nitride_bucket"
 			id: "4DDA332F7E9B545E"
 			tasks: [

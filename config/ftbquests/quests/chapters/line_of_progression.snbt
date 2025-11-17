@@ -284,6 +284,84 @@
 			x: 4.5d
 			y: -17.5d
 		}
+		{
+			id: "11658D0E47EFEE09"
+			linked_quest: "53A9F3758C218CDC"
+			x: -1.5d
+			y: -23.5d
+		}
+		{
+			id: "1A3BFE7DC8C507C7"
+			linked_quest: "06780B462515CAE2"
+			x: 0.0d
+			y: -26.5d
+		}
+		{
+			id: "17D4F571699900F6"
+			linked_quest: "4E77319DB3B30062"
+			x: 0.0d
+			y: -25.0d
+		}
+		{
+			id: "24B39B86A04ADE1A"
+			linked_quest: "421DF7880AD00F58"
+			x: 0.0d
+			y: -23.5d
+		}
+		{
+			id: "614508B26F28D746"
+			linked_quest: "0962C36622E385B8"
+			x: 3.0d
+			y: -23.5d
+		}
+		{
+			id: "7498EC11067DF91F"
+			linked_quest: "1F79E45EF7810DFF"
+			x: 3.0d
+			y: -22.0d
+		}
+		{
+			id: "0CA0CC82F70D911E"
+			linked_quest: "4C5DBB94345FF33B"
+			x: 3.0d
+			y: -20.5d
+		}
+		{
+			id: "1D54184B6EFD838F"
+			linked_quest: "70C2BB4FAA2FB1F2"
+			x: 1.5d
+			y: -25.0d
+		}
+		{
+			id: "38D44FCB53D91232"
+			linked_quest: "744CAEF994308983"
+			x: 1.5d
+			y: -23.5d
+		}
+		{
+			id: "68BF899E0017A40B"
+			linked_quest: "30A1077A14212FE2"
+			x: 1.5d
+			y: -22.0d
+		}
+		{
+			id: "09A8E15E310C22DF"
+			linked_quest: "3FC351F05F2AC743"
+			x: 1.5d
+			y: -20.5d
+		}
+		{
+			id: "1AF9823AB30C2670"
+			linked_quest: "5C302CB1A1068EE1"
+			x: 3.0d
+			y: -31.0d
+		}
+		{
+			id: "4859BD22DD506CA2"
+			linked_quest: "06EC98F6E6AFC2AF"
+			x: 6.0d
+			y: -31.0d
+		}
 	]
 	quests: [
 		{
@@ -722,6 +800,7 @@
 			y: -22.0d
 		}
 		{
+			dependencies: ["576C0430D0CDE409"]
 			id: "30A974D5B70D9BA6"
 			tasks: [{
 				id: "0FF4C89E0631917D"
@@ -954,6 +1033,7 @@
 			y: -29.5d
 		}
 		{
+			dependencies: ["5C302CB1A1068EE1"]
 			id: "2FF72B005CDCDC1A"
 			tasks: [
 				{
@@ -1043,6 +1123,7 @@
 			y: -32.5d
 		}
 		{
+			dependencies: ["6BD707B1FCC47DC7"]
 			disable_toast: true
 			id: "3883C93F8D66832B"
 			tasks: [{
@@ -1135,6 +1216,7 @@
 			y: -32.5d
 		}
 		{
+			dependencies: ["53A9F3758C218CDC"]
 			id: "780DE9C5FAC1A07B"
 			tasks: [{
 				id: "60F21FFB33D8FCB2"
@@ -1145,7 +1227,10 @@
 			y: -23.5d
 		}
 		{
-			dependencies: ["2C389E4B673A803E"]
+			dependencies: [
+				"79428BAEAA7856E1"
+				"26250BA1D20AE2DC"
+			]
 			id: "68F9735CB776A7A5"
 			tasks: [{
 				id: "5A0D53C0B8BFACF3"
@@ -1156,6 +1241,7 @@
 			y: -22.0d
 		}
 		{
+			dependencies: ["3FC351F05F2AC743"]
 			id: "0D4D54F0410EB78A"
 			tasks: [{
 				id: "753E7D945E8041B9"
@@ -1279,6 +1365,11 @@
 			y: -20.5d
 		}
 		{
+			dependencies: [
+				"1772F46C9EAF6FB7"
+				"5FE5E2D9034DA872"
+			]
+			hide_dependency_lines: true
 			id: "4DF812EEFB4FD1C3"
 			optional: true
 			subtitle: "{ftbquests.chapter.line_of_progression.quest77.subtitle}"
@@ -1342,6 +1433,8 @@
 			y: -25.0d
 		}
 		{
+			dependencies: ["3FC351F05F2AC743"]
+			hide_dependency_lines: true
 			id: "6AF20DCF1401A0FE"
 			tasks: [{
 				id: "45AE3FEB444694C9"
@@ -1420,27 +1513,6 @@
 			y: -31.0d
 		}
 		{
-			id: "1A3303CDCDA020EF"
-			tasks: [{
-				id: "2FB2B65B72C007DA"
-				item: "gtceu:assembly_line"
-				type: "item"
-			}]
-			x: -15.0d
-			y: -23.5d
-		}
-		{
-			id: "2C389E4B673A803E"
-			subtitle: "{ftbquests.chapter.line_of_progression.quest88.subtitle}"
-			tasks: [{
-				id: "2B6DA2DF1C1EA537"
-				item: "gtceu:quantum_processor_mainframe"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -22.0d
-		}
-		{
 			dependencies: ["75942788374CDEF3"]
 			id: "297CE2423324B92B"
 			subtitle: "{ftbquests.chapter.line_of_progression.quest89.subtitle}"
@@ -1511,6 +1583,7 @@
 			y: -26.5d
 		}
 		{
+			dependencies: ["395C32B51E768458"]
 			id: "5FE5E2D9034DA872"
 			tasks: [
 				{
@@ -1599,6 +1672,39 @@
 			}]
 			x: -13.5d
 			y: -17.5d
+		}
+		{
+			dependencies: ["0094C2E72105E8CA"]
+			id: "6CBC74158F631BB0"
+			tasks: [{
+				id: "323C88892EDB2D74"
+				item: "gtceu:assembly_line"
+				type: "item"
+			}]
+			x: -15.0d
+			y: -23.5d
+		}
+		{
+			dependencies: ["67ABB3BF6D0C183B"]
+			id: "6BD707B1FCC47DC7"
+			tasks: [{
+				id: "210DA27D042C1096"
+				item: "gtceu:luv_fusion_reactor"
+				type: "item"
+			}]
+			x: -18.0d
+			y: -23.5d
+		}
+		{
+			dependencies: ["421DF7880AD00F58"]
+			id: "26250BA1D20AE2DC"
+			tasks: [{
+				id: "4A26D2B8B936BCEF"
+				item: "gtceu:quantum_processor_mainframe"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -22.0d
 		}
 	]
 	title: "{ftbquests.chapter.line_of_progression.title}"

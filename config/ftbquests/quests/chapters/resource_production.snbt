@@ -1004,10 +1004,7 @@
 			y: -6.5d
 		}
 		{
-			dependencies: [
-				"4F3AB86CDC557B11"
-				"39CF5BCF84727BB3"
-			]
+			dependencies: ["4F3AB86CDC557B11"]
 			dependency_requirement: "one_completed"
 			icon: {
 				Count: 1
@@ -1564,7 +1561,7 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["74749B089D50329C"]
+			dependencies: ["05FB44E437E88BE7"]
 			description: [
 				"{ftbquests.chapter.resource_production.quest89.description1}"
 				""
