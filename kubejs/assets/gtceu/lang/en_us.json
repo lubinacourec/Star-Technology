@@ -1124,6 +1124,11 @@
     "block.gtceu.ev_me_assembler": "§5Advanced ME Assembler III",
     "block.gtceu.iv_me_assembler": "§9Elite ME Assembler",
     "block.gtceu.luv_me_assembler": "§dElite ME Assembler II",
+    "block.gtceu.zpm_me_assembler": "§cElite ME Assembler III",
+    "block.gtceu.uv_me_assembler": "§3Ultimate ME Assembler",
+    "block.gtceu.uhv_me_assembler": "§4Epic ME Assembler",
+    "block.gtceu.uev_me_assembler": "§aEpic ME Assembler II",
+    "block.gtceu.uiv_me_assembler": "§2Epic ME Assembler III",
 
     "block.gtceu.large_me_assembler": "Large ME Assembler",
     "block.gtceu.large_me_assembler.tooltip.0": "A large version of the ME Assembler able to scale your needs even higher",
