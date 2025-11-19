@@ -7,7 +7,6 @@ ServerEvents.tags('item', event => {
     event.add('gtceu:circuits/uhv', 'kubejs:draconic_wetware_processor_assembly');
     event.add('gtceu:circuits/uev', 'kubejs:draconic_wetware_processor_computer');
     event.add('gtceu:circuits/uiv', 'kubejs:draconic_wetware_processor_mainframe');
-    event.add('gtceu:circuits/uev', 'kubejs:wetware_based_runic_neuroloom');
     event.add('gtceu:circuits/uev', 'kubejs:awakened_draconic_wetware_processor_assembly');
     event.add('gtceu:circuits/uiv', 'kubejs:awakened_draconic_wetware_processor_computer');
     event.add('gtceu:circuits/uxv', 'kubejs:awakened_draconic_wetware_processor_mainframe');
@@ -107,7 +106,8 @@ ServerEvents.tags('item', event=>{
         /thermal_extra:.*_block/,
         /thermal_extra:.*_plate/,
         /thermal_extra:.*_rod/,
-        /thermal_extra:.*_gear/
+        /thermal_extra:.*_gear/,
+        /thermal_extra:.*_hammer/
     ]
     const Exnihilo = [
         /exnihilosequentia:.*_ingot/,
@@ -192,5 +192,7 @@ ServerEvents.tags('fluid', event => {
 	event.remove(`forge:molten_${thermalExtraSC}`, `thermal_extra:${thermalExtraSC}`);
     });
     event.remove('forge:sulfuric_acid','vintage:sulfuric_acid');
+
+    event.removeAllTagsFrom(/^thermal_extra:(?!.*_oil$).*/);
 
 });

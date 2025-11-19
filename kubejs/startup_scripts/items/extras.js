@@ -1,65 +1,78 @@
 StartupEvents.registry('item', event => {
 
+    //MISC
     event.create('naquadic_netherite_fibers')
-        .texture('kubejs:item/naquadic_netherite_fibers')
         .rarity('rare')
-        .tooltip('The strongest armor material');
+        .tooltip(Text.translate('item.kubejs.naquadic_netherite_fibers.tooltip'));
 
     event.create('coin')
-        .displayName('StarT Coin')
-        .rarity('EPIC')
-        .tooltip('§7Spend these coins in the store chapter of the questbook')
+        .rarity('epic')
+        .tooltip(Text.translate('item.kubejs.coin.tooltip'))
         .texture('kubejs:item/coin');
 
+    event.create('zalloyic_empty_mold')
+        .texture('kubejs:item/zalloyic_empty_mold');
+
+    event.create('zalloyic_fluid_mold')
+        .texture('kubejs:item/zalloyic_fluid_mold');
+
+    //Tier Multiblocks
     event.create('multiblock_upgrade_kit')
-        .displayName('Multiblock Upgrade Kit')
-        .texture('kubejs:item/kits/upgrade_kit')
-        .tooltip('§7Used to upgrade some HV machines into multiblocks capable of §6Perfect Overclock');
-        
+        .tooltip(Text.translate('item.kubejs.multiblock_upgrade_kit.tooltip'))
+        .texture('kubejs:item/kits/upgrade_kit');
+
+    event.create('prismalic_helix_core')
+        .tooltip(Text.translate('item.kubejs.prismalic_helix_core.tooltip'))
+        .texture('kubejs:item/kits/prismalic_helix_core');
+
+    event.create('prisma_helical_nucleus')
+        .tooltip(Text.translate('item.kubejs.prisma_helical_nucleus.tooltip'))
+        .texture('kubejs:item/kits/prisma_helical_nucleus');
+
+    //Draconic Cells
     event.create('draconic_stem_cells')
-        .displayName('Draconic Stem Cells')
         .texture('kubejs:item/draconic/draconic_stem_cells');
 
     event.create('secreting_draconic_cells')
-        .displayName('Secreting Draconic Cells')
         .texture('kubejs:item/draconic/secreting_draconic_cells');
 
     event.create('draconic_brain_matter_cells')
-        .displayName('Draconic Brain Matter Cells')
         .texture('kubejs:item/draconic/draconic_brain_matter_cells');
 
     event.create('draconic_scale_cells')
-        .displayName('Draconic Scale Cells')
         .texture('kubejs:item/draconic/draconic_scale_cells');
 
     event.create('draconic_embryo')
-        .displayName('Draconic Embryo')
-        .tooltip('§7The potential for creation and destruction can grow from the smallest of things...')
+        .tooltip(Text.translate('item.kubejs.draconic_embryo.tooltip'))
         .texture('kubejs:item/draconic/draconic_embryo');
 
     event.create('dragon_egg_shard')
-        .displayName('§dDragon Egg§r Shard')
         .texture('kubejs:item/draconic/dragon_egg_shard');
 
     event.create('draco_peptide_amino_chain')
-        .displayName('Drac-Peptide Amino Chain')
         .texture('kubejs:item/draconic/draco_peptide_amino_chain');
 
     event.create('abyssal_inductor')
-        .displayName('Abyssal Inductor')
-        .tooltip('§7Simulating the §5End§7 in its purest form.')
+        .tooltip(Text.translate('item.kubejs.abyssal_inductor.tooltip'))
         .texture('kubejs:item/abyssal_inductor');
 
     // Gravi star continuations
     event.create('helish_star')
-        .displayName('Helish Star')
-        .tooltip('§7A Nether Star Returned Home')
+        .tooltip(Text.translate('item.kubejs.helish_star.tooltip'))
         .texture('kubejs:item/helish_star');
 
     event.create('dragonic_eye')
-        .displayName('§5Dragonic§r Eye')
-        .tooltip('§7Can It See the Future?')
+        .tooltip(Text.translate('item.kubejs.dragonic_eye.tooltip'))
         .texture('kubejs:item/dragon_eye');
 
+    //Hellforge Catalyst
+    event.create('infernal_catalyst')
+        .texture('kubejs:item/infernal_catalyst');
+
+    event.create('abyssal_catalyst')
+        .texture('kubejs:item/abyssal_catalyst');
+
+    event.create('ascendant_catalyst')
+        .texture('kubejs:item/ascendant_catalyst');
 
 });

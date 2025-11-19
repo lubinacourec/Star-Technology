@@ -188,9 +188,8 @@ ServerEvents.recipes(event => {
     AllTierMachine('battery_buffer_4x', [Hull, Chest, `4x gtceu:${cable}_quadruple_wire`, Circuit], [Solder+' 144']);
     AllTierMachine('battery_buffer_8x', [Hull, Chest, `4x gtceu:${cable}_octal_wire`, Circuit], [Solder+' 144']);
     AllTierMachine('battery_buffer_16x', [Hull, Chest, `4x gtceu:${cable}_hex_wire`, Circuit], [Solder+' 144']);
-    if (tier !== 'zpm' || 'uv') {
     AllTierMachine('me_assembler', [Hull, '2x '+Arm, '2x '+Circuit, Emitter, Conveyor, Motor, '3x '+Cable1x], [Solder+' 144']);
-    }
+    
     const Transformers = (amps,cableSize) => {
     if (chip !== null){
     AllTierMachine(`transformer_${amps}a`, [Hull, `4x gtceu:${cable}_${cableSize}_cable`, `1x gtceu:${cable1up}_${cableSize}_cable`, Circuit, `4x ${chip}`], [Solder+` ${144 * amps}`]);
