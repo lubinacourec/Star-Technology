@@ -11,8 +11,8 @@
 		{
 			id: "5B9F9EFC7AF759A6"
 			linked_quest: "0BBCC13EE6C7C061"
-			x: 20.5d
-			y: 9.0d
+			x: 21.0d
+			y: 8.0d
 		}
 		{
 			id: "6597F20CEA188552"
@@ -27,6 +27,24 @@
 			size: 1.5d
 			x: 20.0d
 			y: 19.5d
+		}
+		{
+			id: "4FC4729DDEC1BBA6"
+			linked_quest: "5B2F29A61D270031"
+			x: 11.5d
+			y: 7.5d
+		}
+		{
+			id: "28EDEA0EFB7E217A"
+			linked_quest: "72C473F289A5CBA4"
+			x: 1.0d
+			y: 24.0d
+		}
+		{
+			id: "4FDA617DF6380FE3"
+			linked_quest: "245C8B1564B2DEA6"
+			x: 1.0d
+			y: 23.0d
 		}
 	]
 	quests: [
@@ -676,6 +694,7 @@
 			y: 20.5d
 		}
 		{
+			dependencies: ["1AAB9C20E833029A"]
 			icon: "gtceu:methane_bucket"
 			id: "0B21198EDF0CB4E3"
 			size: 1.0d
@@ -696,6 +715,7 @@
 			y: 21.5d
 		}
 		{
+			dependencies: ["3A15777DD813EE71"]
 			icon: "gtceu:fluorine_bucket"
 			id: "6A1E44C0D4F8DF06"
 			size: 1.0d
@@ -968,6 +988,7 @@
 			y: 16.5d
 		}
 		{
+			dependencies: ["54549EC141659C30"]
 			icon: "gtceu:nitration_mixture_bucket"
 			id: "4709B17964A4948C"
 			size: 1.0d
@@ -1112,8 +1133,8 @@
 		}
 		{
 			dependencies: [
-				"58F32D7141E0996D"
-				"3082B526665B4B24"
+				"245C8B1564B2DEA6"
+				"72C473F289A5CBA4"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{ftbquests.chapter.processing_lines_chap_123.quest60.description1}"]
@@ -1126,17 +1147,6 @@
 			}]
 			x: 2.0d
 			y: 23.5d
-		}
-		{
-			id: "58F32D7141E0996D"
-			size: 1.0d
-			tasks: [{
-				id: "3D987B924F07A133"
-				item: "gtceu:crushed_ilmenite_ore"
-				type: "item"
-			}]
-			x: 0.5d
-			y: 24.0d
 		}
 		{
 			dependencies: ["61A21D40EC64D60E"]
@@ -1203,17 +1213,6 @@
 			y: 23.5d
 		}
 		{
-			id: "58C27E0C30A5C15E"
-			size: 1.0d
-			tasks: [{
-				id: "6EFADBC2CA612546"
-				item: "gtceu:crushed_tungstate_ore"
-				type: "item"
-			}]
-			x: 11.5d
-			y: 7.5d
-		}
-		{
 			dependencies: ["568D47BC3D755702"]
 			id: "652ED98223A71FDB"
 			size: 1.0d
@@ -1245,7 +1244,7 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["58C27E0C30A5C15E"]
+			dependencies: ["5B2F29A61D270031"]
 			id: "568D47BC3D755702"
 			size: 1.0d
 			tasks: [{
@@ -1389,6 +1388,7 @@
 			y: 14.5d
 		}
 		{
+			dependencies: ["4D9DAED52FF74B8B"]
 			hide_dependency_lines: true
 			id: "58037316F922EBF0"
 			size: 1.0d
@@ -1522,6 +1522,7 @@
 			y: 21.0d
 		}
 		{
+			dependencies: ["1AAB9C20E833029A"]
 			icon: "gtceu:chlorine_trifluoride_bucket"
 			id: "7427421F567D8165"
 			size: 1.0d
@@ -1688,6 +1689,7 @@
 			y: 22.5d
 		}
 		{
+			dependencies: ["0AB3A8C14C3A0512"]
 			icon: "gtceu:wood_vinegar_bucket"
 			id: "767CC03EDC618C0B"
 			size: 1.0d
@@ -1708,6 +1710,7 @@
 			y: 21.5d
 		}
 		{
+			dependencies: ["0AB3A8C14C3A0512"]
 			icon: "gtceu:wood_tar_bucket"
 			id: "1A1969BCD61B4F09"
 			size: 1.0d
@@ -1816,6 +1819,7 @@
 			y: 22.5d
 		}
 		{
+			dependencies: ["550DB81B8DC91730"]
 			description: ["{ftbquests.chapter.processing_lines_chap_123.quest104.description1}"]
 			icon: "gtceu:propene_bucket"
 			id: "629C4DE28BB97660"
@@ -2148,20 +2152,6 @@
 			y: 12.5d
 		}
 		{
-			id: "3082B526665B4B24"
-			tasks: [{
-				id: "1F0A0CB44D4637BC"
-				item: {
-					Count: 1
-					id: "gtceu:crushed_bauxite_ore"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 0.5d
-			y: 23.0d
-		}
-		{
 			id: "02ED5054DF2DCDBE"
 			invisible: true
 			optional: true
@@ -2185,8 +2175,8 @@
 				}
 				type: "item"
 			}]
-			x: 22.0d
-			y: 9.0d
+			x: 22.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["02469EA239AC9C3F"]
@@ -2215,8 +2205,8 @@
 				}
 				type: "item"
 			}]
-			x: 22.5d
-			y: 8.0d
+			x: 23.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["02469EA239AC9C3F"]
@@ -2230,8 +2220,8 @@
 				}
 				type: "item"
 			}]
-			x: 22.5d
-			y: 10.0d
+			x: 24.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["556B952A01A153DE"]
@@ -2318,7 +2308,11 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["3E3103622B9679C6"]
+			dependencies: [
+				"3E3103622B9679C6"
+				"14BCBC516D35FEC1"
+			]
+			dependency_requirement: "one_completed"
 			id: "5E894DC47896785B"
 			size: 1.0d
 			tasks: [{
@@ -2357,7 +2351,11 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["206859C2B2272102"]
+			dependencies: [
+				"206859C2B2272102"
+				"2750AC5453EB3184"
+			]
+			dependency_requirement: "one_completed"
 			hide_dependent_lines: true
 			id: "6A57B03345FC6D99"
 			rewards: [{
@@ -2383,6 +2381,7 @@
 			dependencies: [
 				"5E894DC47896785B"
 				"6A57B03345FC6D99"
+				"733685E002AAE489"
 			]
 			dependency_requirement: "one_completed"
 			id: "783BDF78D6C56815"
@@ -2744,10 +2743,7 @@
 			y: 12.5d
 		}
 		{
-			dependencies: [
-				"13C1904CBEB09726"
-				"6375D265594CEE4F"
-			]
+			dependencies: ["13C1904CBEB09726"]
 			id: "24CF3F64E74A027E"
 			optional: true
 			tasks: [{
@@ -2936,6 +2932,56 @@
 			}]
 			x: 13.5d
 			y: 19.5d
+		}
+		{
+			dependencies: [
+				"7F4D5331B59AA5F0"
+				"68865F1DDBFFFACE"
+			]
+			hide_until_deps_complete: true
+			id: "14BCBC516D35FEC1"
+			tasks: [{
+				id: "00BDF7FFA8D22AAD"
+				item: "kubejs:thorium_fuel_rod"
+				type: "item"
+			}]
+			x: 26.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"5E894DC47896785B"
+				"68865F1DDBFFFACE"
+			]
+			description: [
+				"Go ahead..."
+				""
+				"Take a bit"
+			]
+			hide_until_deps_complete: true
+			id: "733685E002AAE489"
+			tasks: [{
+				id: "14F02F7624B5ABFB"
+				item: "kubejs:highly_enriched_uranium_fuel_rod"
+				type: "item"
+			}]
+			x: 28.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"206859C2B2272102"
+				"68865F1DDBFFFACE"
+			]
+			hide_until_deps_complete: true
+			id: "2750AC5453EB3184"
+			tasks: [{
+				id: "6DAC8829CD7E3A0D"
+				item: "kubejs:low_enriched_uranium_fuel_rod"
+				type: "item"
+			}]
+			x: 29.0d
+			y: 11.0d
 		}
 	]
 	title: "{ftbquests.chapter.processing_lines_chap_123.title}"

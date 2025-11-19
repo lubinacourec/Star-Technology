@@ -166,7 +166,7 @@ ServerEvents.recipes(event => {
             A: 'gtceu:luv_electric_piston',
             B: Sediment,
             C: 'gtceu:double_netherite_certus_quartz_skystone_alloy_plate',
-            D: Item.of('expatternprovider:infinity_cell', `{record:{"#c":"ae2:i",id:"minecraft:cobblestone"}}`),
+            D: Item.of('expatternprovider:infinity_cell', `{record:{"#c":"ae2:i",id:"minecraft:cobblestone"}}`).strongNBT(),
             E: 'gtceu:luv_conveyor_module',
             F: 'gtceu:pure_netherite_gear'
     });
@@ -339,7 +339,7 @@ ServerEvents.recipes(event => {
         });
 
     if (global.packmode !== 'hard'){(() => {       
-    ['lv', 'mv', 'hv', 'ev', 'iv', 'luv'].forEach(voltage => {
+    ['lv', 'mv', 'hv', 'ev', 'iv', 'luv', 'zpm', 'uv', 'uhv', 'uev', 'uiv'].forEach(voltage => {
         let cable = (voltage) => {
             let mat;
             switch(voltage) {
@@ -349,6 +349,11 @@ ServerEvents.recipes(event => {
                 case 'ev': {mat = 'aluminium'; break}
                 case 'iv': {mat = 'platinum'; break}
                 case 'luv': {mat = 'niobium_titanium'; break}
+                case 'zpm': {mat = 'vanadium_gallium'; break}
+                case 'uv': {mat = 'yttrium_barium_cuprate'; break}
+                case 'uhv': {mat = 'europium'; break}
+                case 'uev': {mat = 'cerium_tritelluride'; break}
+                case 'uiv': {mat = 'polonium_bismide'; break}
             }
             return mat
         };

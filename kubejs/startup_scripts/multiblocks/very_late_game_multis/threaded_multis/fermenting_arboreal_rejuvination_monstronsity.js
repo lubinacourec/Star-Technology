@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('fermenting_arboreal_rejuvination_monstronsity', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .machine((holder) => new $StarTThreadingCapableMachine(holder))
-        .recipeTypes(['hydroponic_garden', 'industrial_fishery', 'tree_greenhouse'])
+        .recipeTypes(['hydroponic_garden', 'industrial_fishery', 'tree_greenhouse', 'composting_factory'])
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, $StarTRecipeModifiers.BULK_PROCESSING, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THREADING_MACHINE])
         .appearanceBlock(() => Block.getBlock('kubejs:true_revitilization_casing'))
         .pattern(definition => FactoryBlockPattern.start()

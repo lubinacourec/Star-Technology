@@ -388,7 +388,6 @@
 			dependencies: [
 				"020048FAC9576691"
 				"138E77CDBA50A619"
-				"53A9F3758C218CDC"
 				"272CE9BF358D64FE"
 			]
 			description: [
@@ -415,16 +414,34 @@
 					type: "item"
 				}
 				{
-					id: "06A6F6CC573EB32A"
-					item: "gtceu:iv_scanner"
-					type: "item"
-				}
-				{
 					id: "437AA53011E32C41"
 					item: {
 						Count: 1
 						id: "gtceu:data_stick"
 						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "08692192BBA7EA24"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							display: {
+								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Early Scanners\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:ev_scanner"
+								}
+								{
+									Count: 1b
+									id: "gtceu:iv_scanner"
+								}
+							]
+						}
 					}
 					type: "item"
 				}
@@ -879,6 +896,7 @@
 			dependencies: [
 				"79428BAEAA7856E1"
 				"023794367F1B28D1"
+				"26250BA1D20AE2DC"
 			]
 			description: ["{ftbquests.chapter.futuristic_mechanisms.quest40.description1}"]
 			id: "175837CCB419A09F"
@@ -1072,7 +1090,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["65D76272BA5E67FC"]
+			dependencies: ["09E7AA7D98045727"]
 			description: ["{ftbquests.chapter.futuristic_mechanisms.quest50.description1}"]
 			id: "2587E109968EFBB4"
 			rewards: [{
@@ -1686,6 +1704,11 @@
 			]
 			description: ["{ftbquests.chapter.futuristic_mechanisms.quest80.description1}"]
 			id: "7D492D6B39A22DDE"
+			rewards: [{
+				id: "1ED7F11E428B82AC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "05EFA3704F91A25E"
 				item: "gtceu:superconducting_coil"
@@ -1724,6 +1747,11 @@
 			dependencies: ["7FD0034E639F3B2D"]
 			description: ["{ftbquests.chapter.futuristic_mechanisms.quest83.description1}"]
 			id: "3A603E70EB4B856F"
+			rewards: [{
+				id: "4557AE0F39D0EF65"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4380C92864BF9161"
 				item: "gtceu:dragonsteel_single_wire"
@@ -1740,6 +1768,11 @@
 				"{ftbquests.chapter.futuristic_mechanisms.quest85.description2}"
 			]
 			id: "56803575B2364F6A"
+			rewards: [{
+				id: "075C347B869D5C44"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7DC8EBB02B5E2C9A"
 				item: "gtceu:prismalium_single_wire"
@@ -1816,9 +1849,18 @@
 		}
 		{
 			dependencies: ["023794367F1B28D1"]
-			description: ["{ftbquests.chapter.futuristic_mechanisms.quest89.description1}"]
+			description: [
+				"{ftbquests.chapter.futuristic_mechanisms.quest89.description1}"
+				""
+				"&7Currently this isn't needed till UEV"
+			]
 			id: "0BF27AFE0C572EF0"
 			optional: true
+			rewards: [{
+				id: "1934C9F63B1453D8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6B9F58B53AFE96DE"
 				item: "start_core:redstone_variadic_interface"
@@ -1863,8 +1905,14 @@
 		}
 		{
 			dependencies: ["36C01453717B249D"]
+			description: ["You made a Trinium Coil ABS right?"]
 			hide_dependency_lines: true
 			id: "5DD60CB0D67AD39C"
+			rewards: [{
+				id: "10A85083B588A490"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "35867E3AB59BD05B"
 				item: "gtceu:trinaquadalloy_ingot"
@@ -1894,6 +1942,13 @@
 		}
 		{
 			dependencies: ["464BB867FCF25A94"]
+			description: [
+				"A Boosted ABS....."
+				""
+				"\"Woo, imabouttomakeanameformyselfhere\""
+				""
+				"Oh... only 1 energy hatch, oh well its still cracked."
+			]
 			id: "20136E5C195AFED1"
 			shape: "gear"
 			size: 1.25d
@@ -1918,6 +1973,7 @@
 		}
 		{
 			dependencies: ["0094C2E72105E8CA"]
+			description: ["A boosted VF, well I guess that's nice."]
 			id: "061571A0D03CE303"
 			shape: "gear"
 			size: 1.25d
@@ -1931,11 +1987,18 @@
 		}
 		{
 			dependencies: ["65D76272BA5E67FC"]
+			description: ["By processing down Naquadah through a series of reaction you can produce some fancy material."]
 			id: "09E7AA7D98045727"
+			rewards: [{
+				id: "7CDDA05E21077AA6"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "286303E60297ADCE"
 					item: "gtceu:enriched_naquadah_ingot"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1944,6 +2007,7 @@
 					type: "item"
 				}
 			]
+			title: "Naquadah Byproducts"
 			x: 4.0d
 			y: 1.0d
 		}

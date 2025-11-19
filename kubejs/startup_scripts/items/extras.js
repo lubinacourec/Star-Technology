@@ -1,19 +1,35 @@
 StartupEvents.registry('item', event => {
 
+    //MISC
     event.create('naquadic_netherite_fibers')
         .rarity('rare')
-        .tooltip(Text.translate('item.kubejs.naquadic_netherite_fibers.tooltip'))
-        .tooltip('The strongest armor material');
+        .tooltip(Text.translate('item.kubejs.naquadic_netherite_fibers.tooltip'));
 
     event.create('coin')
         .rarity('epic')
         .tooltip(Text.translate('item.kubejs.coin.tooltip'))
         .texture('kubejs:item/coin');
 
+    event.create('zalloyic_empty_mold')
+        .texture('kubejs:item/zalloyic_empty_mold');
+
+    event.create('zalloyic_fluid_mold')
+        .texture('kubejs:item/zalloyic_fluid_mold');
+
+    //Tier Multiblocks
     event.create('multiblock_upgrade_kit')
         .tooltip(Text.translate('item.kubejs.multiblock_upgrade_kit.tooltip'))
         .texture('kubejs:item/kits/upgrade_kit');
 
+    event.create('prismalic_helix_core')
+        .tooltip(Text.translate('item.kubejs.prismalic_helix_core.tooltip'))
+        .texture('kubejs:item/kits/prismalic_helix_core');
+
+    event.create('prisma_helical_nucleus')
+        .tooltip(Text.translate('item.kubejs.prisma_helical_nucleus.tooltip'))
+        .texture('kubejs:item/kits/prisma_helical_nucleus');
+
+    //Draconic Cells
     event.create('draconic_stem_cells')
         .texture('kubejs:item/draconic/draconic_stem_cells');
 

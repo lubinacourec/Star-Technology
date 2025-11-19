@@ -106,7 +106,8 @@ ServerEvents.tags('item', event=>{
         /thermal_extra:.*_block/,
         /thermal_extra:.*_plate/,
         /thermal_extra:.*_rod/,
-        /thermal_extra:.*_gear/
+        /thermal_extra:.*_gear/,
+        /thermal_extra:.*_hammer/
     ]
     const Exnihilo = [
         /exnihilosequentia:.*_ingot/,
@@ -191,5 +192,7 @@ ServerEvents.tags('fluid', event => {
 	event.remove(`forge:molten_${thermalExtraSC}`, `thermal_extra:${thermalExtraSC}`);
     });
     event.remove('forge:sulfuric_acid','vintage:sulfuric_acid');
+
+    event.removeAllTagsFrom(/^thermal_extra:(?!.*_oil$).*/);
 
 });

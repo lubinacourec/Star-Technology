@@ -1294,10 +1294,12 @@
 		}
 		{
 			dependencies: ["1C81273869C0EC9F"]
+			description: ["[\"\",{\"underlined\":1,\"translate\":\"Read About It Here\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"62D06C72396A9375\"}}]"]
+			icon: "ftbquests:book"
 			id: "79CFAA5E52FF8766"
 			tasks: [{
 				id: "79EEB4B57AA13EBD"
-				title: "Bulking Explained"
+				title: "Go Read About Bulking"
 				type: "checkmark"
 			}]
 			x: 5.0d
@@ -1363,9 +1365,9 @@
 		}
 		{
 			dependencies: [
-				"664F435508073B8E"
 				"7FFCAD92772A175F"
 				"52B553FDB34B1475"
+				"707C2E9BA62A60C5"
 			]
 			description: [
 				"{ftbquests.chapter.adventures_in_abydos.quest75.description1}"

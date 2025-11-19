@@ -23,7 +23,7 @@
 
     "item.kubejs.sweetcord_beer": "Sweetcord Beer",
     "item.kubejs.sweetcord_beer.tooltip": "§7A sweet drink that gives you §6Haste",
-    "item.kubejs.apple_cidar": "Apple Cidar",
+    "item.kubejs.apple_cidar": "Apple Cider",
     "item.kubejs.apple_cidar.tooltip": "§7A refreshing drink that gives you §6Slow Falling",
     "item.kubejs.carrot_ale": "Carrot Ale",
     "item.kubejs.carrot_ale.tooltip": "§7A bitter drink that gives you §6Night Vision",
@@ -212,6 +212,10 @@
     "item.kubejs.coin.tooltip": "§7Spend these coins in the store chapter of the questbook",
     "item.kubejs.multiblock_upgrade_kit": "Multiblock Upgrade Kit",
     "item.kubejs.multiblock_upgrade_kit.tooltip": "§7Used to upgrade some HV machines into multiblocks capable of §6Perfect Overclock",
+    "item.kubejs.prismalic_helix_core": "Prismalic Helix Core",
+    "item.kubejs.prismalic_helix_core.tooltip": "§7A §5P§4r§6i§es§am§2a§3l§1i§9c§7 Circuit",
+    "item.kubejs.prisma_helical_nucleus": "Prisma-Helical Nucleus",
+    "item.kubejs.prisma_helical_nucleus.tooltip": "§7The core component of all §5P§4r§6i§es§am§2a§3l§1i§9c§7 machines",
     "item.kubejs.draconic_stem_cells": "Draconic Stem Cells",
     "item.kubejs.secreting_draconic_cells": "Secreting Draconic Cells",
     "item.kubejs.draconic_brain_matter_cells": "Draconic Brain Matter Cells",
@@ -394,6 +398,8 @@
     "item.kubejs.uev_universal_circuit.tooltip": "§o§7For use with AE2 autocrafting",
     "item.kubejs.uiv_universal_circuit": "§2UIV§r Universal Circuit",
     "item.kubejs.uiv_universal_circuit.tooltip": "§o§7For use with AE2 autocrafting",
+    "item.kubejs.uxv_universal_circuit": "§eUXV§r Universal Circuit",
+    "item.kubejs.uxv_universal_circuit.tooltip": "§o§7For use with AE2 autocrafting",
 
     "item.kubejs.uhv_voltage_coil": "Ultra High Voltage Coil",
     "item.kubejs.uhv_voltage_coil.tooltip": "§l§4P§fe§4p§fp§4e§fr§4m§fi§4n§ft§r Coil",

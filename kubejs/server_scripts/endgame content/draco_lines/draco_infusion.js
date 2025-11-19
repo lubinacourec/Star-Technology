@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
 
     Infusion('draco_brain_matter_cells','2x kubejs:draconic_brain_matter_cells','thermal:ender 10000','2x kubejs:draconic_stem_cells',
     '8x gtceu:fine_prismalium_wire','16x gtceu:carbon_fibers','kubejs:runic_convergence_circuit_board','8x gtceu:fine_borosilicate_glass_wire',
-    'gtceu:luv_emitter','gtceu:wetware_circuit_board',960,GTValues.VHA[GTValues.UHV]);
+    'gtceu:luv_emitter','gtceu:wetware_circuit_board',320,GTValues.VHA[GTValues.UHV]);
 
     Infusion('draco_scale_cells','32x kubejs:draconic_scale_cells','gtceu:neutronium 6804','32x kubejs:draconic_stem_cells','gtceu:dense_naquadah_alloy_plate',
     'gtceu:dense_tungsten_steel_plate','gtceu:dense_ancient_netherite_plate','gtceu:dense_darmstadtium_plate','gtceu:dense_obsidian_plate',
