@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.large_chemical_reactor(id('uranium_tetrafluoride_to_uranium_dioxide'))
         .inputFluids('gtceu:uranium_tetrafluoride 1000', 'minecraft:water 2000')
         .outputFluids('gtceu:hydrofluoric_acid 4000')
-        .itemOutputs('3x gtceu:uraninite_dust')
+        .itemOutputs('2x gtceu:uraninite_dust')
         .duration(850)
         .EUt(GTValues.V[GTValues.LuV]);
 
