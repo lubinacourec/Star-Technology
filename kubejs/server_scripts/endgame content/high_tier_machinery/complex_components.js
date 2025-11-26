@@ -10,32 +10,34 @@ ServerEvents.recipes(event => {
         'assembly_line/electric_motor_luv','scanner/1_x_gtceu_iv_electric_motor',
         'assembly_line/electric_pump_uv','research_station/1_x_gtceu_zpm_electric_motor',
         'assembly_line/electric_pump_zpm','scanner/1_x_gtceu_luv_electric_pump',
-        'assembly_line/electric_pump_luv','scanner/1_x_gtceu_iv_electric_pump'
+        'assembly_line/electric_pump_luv','scanner/1_x_gtceu_iv_electric_pump',
+        'assembly_line/field_generator_zpm','research_station/1_x_gtceu_luv_field_generator'
         ].forEach(removalID => {
             event.remove({id: `gtceu:${removalID}`});
         });
     
-        const uvComponent = (type,inputs,fluids) => {
+        const rsComponent = (tier,tier1,type,inputs,fluids,EUt,cwu,rsEUt) => {
 
             event.recipes.gtceu.assembly_line(id(`${type}_uv`))
                 .itemInputs(inputs)
                 .inputFluids(fluids)
-                .itemOutputs(`gtceu:uv_${type}`)
+                .itemOutputs(`gtceu:${tier}_${type}`)
                 .stationResearch(
                     researchRecipeBuilder => researchRecipeBuilder
-                        .researchStack(Item.of(`gtceu:zpm_${type}`))
-                        .EUt(122880)
-                        .CWUt(32)
+                        .researchStack(Item.of(`gtceu:${tier1}_${type}`))
+                        .EUt(rsEUt)
+                        .CWUt(cwu)
                     )
                 .duration(600)
-                .EUt(100000);
+                .EUt(EUt);
 
         };
 
-        uvComponent('electric_motor',['gtceu:long_magnetic_samarium_rod','4x gtceu:long_tritanium_rod','4x gtceu:tritanium_ring','8x gtceu:tritanium_round','64x gtceu:fine_americium_wire','2x gtceu:yttrium_barium_cuprate_single_cable'],['gtceu:soldering_alloy 576','gtceu:lubricant 1000','gtceu:naquadria 576']);
-        uvComponent('electric_pump',['gtceu:uv_electric_motor','gtceu:naquadah_normal_fluid_pipe','2x gtceu:tritanium_plate','8x gtceu:tritanium_screw','8x gtceu:silicone_rubber_ring','gtceu:naquadah_alloy_rotor','2x gtceu:yttrium_barium_cuprate_single_cable'],['gtceu:soldering_alloy 576','gtceu:lubricant 1000','gtceu:naquadria 576']);
+        rsComponent('uv','zpm','electric_motor',['gtceu:long_magnetic_samarium_rod','4x gtceu:long_tritanium_rod','4x gtceu:tritanium_ring','8x gtceu:tritanium_round','64x gtceu:fine_americium_wire','2x gtceu:yttrium_barium_cuprate_single_cable'],['gtceu:soldering_alloy 576','gtceu:lubricant 1000','gtceu:naquadria 576'],100000,32,128000);
+        rsComponent('uv','zpm','electric_pump',['gtceu:uv_electric_motor','gtceu:naquadah_normal_fluid_pipe','2x gtceu:tritanium_plate','8x gtceu:tritanium_screw','8x gtceu:silicone_rubber_ring','gtceu:naquadah_alloy_rotor','2x gtceu:yttrium_barium_cuprate_single_cable'],['gtceu:soldering_alloy 576','gtceu:lubricant 1000','gtceu:naquadria 576'],100000,32,128000);
+        rsComponent('zpm','luv','field_generator',['gtceu:naquadah_alloy_frame','6x gtceu:naquadah_alloy_plate','2x gtceu:quantum_star','2x gtceu:zpm_emitter','2x #gtceu:circuits/zpm','64x gtceu:fine_uranium_rhodium_dinaquadide_wire','64x gtceu:fine_uranium_rhodium_dinaquadide_wire','4x gtceu:vanadium_gallium_single_cable'],['gtceu:soldering_alloy 1152'],24000,4,16000);
 
-        const subUVcomponent = (tier,tier1,type,inputs,fluids) => {
+        const scanComponent = (tier,tier1,type,inputs,fluids) => {
 
             event.recipes.gtceu.assembly_line(id(`${type}_${tier}`))
                 .itemInputs(inputs)
@@ -52,10 +54,10 @@ ServerEvents.recipes(event => {
 
         };
 
-        subUVcomponent('zpm','luv','electric_motor',['gtceu:long_magnetic_samarium_rod','4x gtceu:long_osmiridium_rod','4x gtceu:osmiridium_ring','8x gtceu:osmiridium_round','64x gtceu:fine_europium_wire','2x gtceu:vanadium_gallium_single_cable'],['gtceu:soldering_alloy 288','gtceu:lubricant 500']);
-        subUVcomponent('zpm','luv','electric_pump',['gtceu:zpm_electric_motor','gtceu:polybenzimidazole_normal_fluid_pipe','2x gtceu:osmiridium_plate','8x gtceu:osmiridium_screw','6x gtceu:silicone_rubber_ring','gtceu:osmiridium_rotor','2x gtceu:vanadium_gallium_single_cable'],['gtceu:soldering_alloy 288','gtceu:lubricant 500']);
-        subUVcomponent('luv','iv','electric_motor',['gtceu:long_magnetic_samarium_rod','4x gtceu:long_hsss_rod','4x gtceu:hsss_ring','8x gtceu:hsss_round','64x gtceu:fine_ruridit_wire','2x gtceu:niobium_titanium_single_cable'],['gtceu:soldering_alloy 144','gtceu:lubricant 250']);
-        subUVcomponent('luv','iv','electric_pump',['gtceu:luv_electric_motor','gtceu:niobium_titanium_normal_fluid_pipe','2x gtceu:hsss_plate','8x gtceu:hsss_screw','4x gtceu:silicone_rubber_ring','gtceu:hsss_rotor','2x gtceu:niobium_titanium_single_cable'],['gtceu:soldering_alloy 144','gtceu:lubricant 250']);
+        scanComponent('zpm','luv','electric_motor',['gtceu:long_magnetic_samarium_rod','4x gtceu:long_osmiridium_rod','4x gtceu:osmiridium_ring','8x gtceu:osmiridium_round','64x gtceu:fine_europium_wire','2x gtceu:vanadium_gallium_single_cable'],['gtceu:soldering_alloy 288','gtceu:lubricant 500']);
+        scanComponent('zpm','luv','electric_pump',['gtceu:zpm_electric_motor','gtceu:polybenzimidazole_normal_fluid_pipe','2x gtceu:osmiridium_plate','8x gtceu:osmiridium_screw','6x gtceu:silicone_rubber_ring','gtceu:osmiridium_rotor','2x gtceu:vanadium_gallium_single_cable'],['gtceu:soldering_alloy 288','gtceu:lubricant 500']);
+        scanComponent('luv','iv','electric_motor',['gtceu:long_magnetic_samarium_rod','4x gtceu:long_hsss_rod','4x gtceu:hsss_ring','8x gtceu:hsss_round','64x gtceu:fine_ruridit_wire','2x gtceu:niobium_titanium_single_cable'],['gtceu:soldering_alloy 144','gtceu:lubricant 250']);
+        scanComponent('luv','iv','electric_pump',['gtceu:luv_electric_motor','gtceu:niobium_titanium_normal_fluid_pipe','2x gtceu:hsss_plate','8x gtceu:hsss_screw','4x gtceu:silicone_rubber_ring','gtceu:hsss_rotor','2x gtceu:niobium_titanium_single_cable'],['gtceu:soldering_alloy 144','gtceu:lubricant 250']);
 
 
     // === Controller Blocks === 
@@ -500,7 +502,7 @@ ServerEvents.recipes(event => {
     }
 
     preUHVmaterialList(1,'luv','iv','ev','hsss','hsss','ruridit','niobium_titanium','niobium_titanium','indium_tin_barium_titanium_cuprate','quantum_star',1,'ruridit','palladium','hsss',6000);
-    preUHVmaterialList(2,'zpm','luv','iv','osmiridium','osmiridium','europium','vanadium_gallium','polybenzimidazole','uranium_rhodium_dinaquadide','quantum_star','osmiridium',2,'trinium','naquadah_alloy',24000);
+    preUHVmaterialList(2,'zpm','luv','iv','osmiridium','osmiridium','europium','vanadium_gallium','polybenzimidazole','uranium_rhodium_dinaquadide','quantum_star',2,'osmiridium','trinium','naquadah_alloy',24000);
     preUHVmaterialList(3,'uv','zpm','luv','tritanium','naquadah_alloy','americium','yttrium_barium_cuprate','naquadah','enriched_naquadah_trinium_europium_duranide','gravi_star',1,'tritanium','naquadria','tritanium',100000);
 
 });
