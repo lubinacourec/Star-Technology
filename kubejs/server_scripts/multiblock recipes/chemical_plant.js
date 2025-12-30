@@ -438,10 +438,16 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.enlightened_chemistry(id('better_draco_stem_cells'))
         .itemInputs('gtceu:nether_star_dust','gtceu:echo_shard_dust')
-        .inputFluids('gtceu:abyssal_nutrient_blend 2000','gtceu:draconic_enrichment_serum 500')
-        .itemOutputs('8x kubejs:draconic_stem_cells')
-        .outputFluids('gtceu:condensed_abyssal_nutrient_blend 800')
-        .duration(46)
+        .inputFluids('gtceu:draconic_enrichment_serum 1000')
+        .itemOutputs('16x kubejs:draconic_stem_cells')
+        .duration(106)
+        .EUt(GTValues.VHA[GTValues.UIV]);
+
+    event.recipes.gtceu.enlightened_chemistry(id('better_draco_brain_matter_cells'))
+        .itemInputs('8x gtceu:tiny_prismalium_dust','16x kubejs:naquadic_netherite_fibers','#gtceu:circuits/zpm')
+        .inputFluids('gtceu:draconic_enrichment_serum 750','thermal:ender 12500')
+        .itemOutputs('32x kubejs:draconic_brain_matter_cells')
+        .duration(186)
         .EUt(GTValues.VHA[GTValues.UIV]);
 
 });
