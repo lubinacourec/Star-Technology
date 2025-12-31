@@ -45,7 +45,7 @@
 			id: "7F751F6B23BCF63D"
 			linked_quest: "1B6159E114BA50ED"
 			x: -1.0d
-			y: -5.0d
+			y: -7.0d
 		}
 	]
 	quests: [
@@ -998,8 +998,8 @@
 				item: "kubejs:draco_advanced_soc_wafer"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -2.0d
+			x: 4.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -1019,8 +1019,8 @@
 				item: "start_core:sterile_cleaning_maintenance_hatch"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -4.0d
+			x: -2.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -1197,9 +1197,8 @@
 		}
 		{
 			dependencies: [
-				"310FC3F86513555F"
 				"1B6159E114BA50ED"
-				"00333140377A33F5"
+				"709EF5314988C381"
 			]
 			description: ["{ftbquests.chapter.draconic_age_part_1.quest52.description1}"]
 			id: "5FEC7470D01CEBDD"
@@ -1210,14 +1209,14 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.5d
+			size: 1.25d
 			tasks: [{
 				id: "67F0D3F6D4404EBF"
 				item: "gtceu:mega_abs"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -6.0d
+			x: -5.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["5944C4DE27F98FF3"]
@@ -1623,7 +1622,7 @@
 				item: "start_core:daydream_spire"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 0.0d
 			y: -4.0d
 		}
 		{
@@ -2203,8 +2202,8 @@
 				title: "Go Read About Threading"
 				type: "checkmark"
 			}]
-			x: 7.0d
-			y: -1.0d
+			x: 6.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["4450509C08F416EC"]
@@ -2485,6 +2484,20 @@
 			}]
 			x: 10.0d
 			y: -4.0d
+		}
+		{
+			dependencies: [
+				"2DACE6EF41A118D9"
+				"6A82CC9F01960097"
+			]
+			id: "70F533114F1D74B2"
+			tasks: [{
+				id: "15A9C024C52E78F1"
+				item: "gtceu:ultimate_ebf"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.0d
 		}
 	]
 	title: "{ftbquests.chapter.draconic_age_part_1.title}"
